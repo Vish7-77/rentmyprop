@@ -21,6 +21,7 @@
         '130':'40rem',
         '132':'45rem',
        '140':'125rem',
+       '141':'145rem',
         '100':'28rem',
         '135':'70rem'
       },
@@ -50,6 +51,7 @@
           }
         }
       </script>
+      <script src="script.js"></script>
 </head>
 <body>
     <nav class="flex z-50 fixed w-full bg-yellow-500 h-20 justify-between items-center tab:pl-2 tab:pr-2 pl-8 pr-8">
@@ -63,10 +65,28 @@
             <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Contact </a>
 
         </span>
+    <span class="tab:flex 2xl:hidden">
+
+        <button class="mr-5"  onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+       
+
+    </span>
 
     </nav>
-  <section class="flex items-center   justify-center flex-col h-128 bg-[url('/assets/mainlanding.jpg')] bg-center bg-cover ">
-<span class="font-extrabold text-3xl text-black drop-shadow-2xl underline">Your property. Our priority</span>
+  <section class="flex items-center relative  justify-center flex-col h-128 bg-[url('/assets/mainlanding.jpg')] bg-center bg-cover ">
+<div class="teb:flex 2xl:hidden flex absolute flex-col bg-white w-full h-1/3 justify-evenly top-20 z-50"  id="opnmen">
+    <a class="text-gray-500  scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
+    <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/"> Owners Benifit</a>
+    <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Tenants </a>
+    <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Refer a Friend </a>
+    <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">View Property </a>
+    <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Contact </a>
+
+
+</div>
+    <span class="font-extrabold text-3xl iphone:text-lg text-black drop-shadow-2xl underline">Your property. Our priority</span>
 <button class=" font-bold w-60 h-12 hover:border-black hover:bg-white hover:shadow-lg hover:shadow-yellow-500 duration-150 ease-in transition-all rounded-sm border-white border-2 mt-8 bg-yellow-100">ADD YOUR PROPERTY</button>
   </section>
 <div class="items-center justify-center flex w-full h-32">
@@ -74,12 +94,12 @@
 
 </div>
 
-<section class="tab:h-130 px-20 py-8 flex w-full h-96 bg-gray-200 flex-col items-center justify-evenly">
+<section class="tab:h-130 px-20 iphone:px-1 iphone:py-1 py-8 flex w-full h-96 bg-gray-200 flex-col items-center justify-evenly">
 <div class="flex tab:flex-col tab:h-1/3 h-1/2 w-full justify-between items-center">
     <span class="h-1/3 items-center justify-evenly flex 1/3">
         <span class="w-1/6 border-2 border-black flex h-full  justify-center items-center"><i class="fa-sharp text-3xl  fa-solid fa-user-tie"></i></span>
         <span class="w-3/4 justify-center flex flex-col">
-            <h1 class="font-bold text-yellow-600 text-xl">VERIFIED TENANTS</h1>
+            <h1 class="font-bold text-yellow-600  text-xl">VERIFIED TENANTS</h1>
             <span>We place only responsible tenants who will treat your property well.</span>
         </span>
         </span>
@@ -116,7 +136,7 @@
 </section>
 
 
-<div class="flex w-full h-32 bg-yellow-500 justify-center items-center tab:text-base font-bold text-2xl">
+<div class="flex w-full iphone:font-medium iphone:text-base h-32 bg-yellow-500 justify-center items-center tab:text-base font-bold text-2xl">
    <span class="underline">  Our mission:</span> Make real estate affairs safe, simple and efficient. 
 
 </div>
@@ -201,7 +221,7 @@
 </span>
 <span class="w-1/4 tab:w-3/4  flex flex-col justify-evenly h-1/2 items-center">
 <span>ZOHO</span>
-<span class="font-bold text-lg text-yellow-800">TOP 10 PROPERTY MANAGEMENT</span>
+<span class="font-bold text-lg iphone:text-base text-yellow-800">TOP 10 PROPERTY MANAGEMENT</span>
 <span class="font-bold text-gray-700">2019</span>
 </span>
 
@@ -234,7 +254,7 @@
 
 <div class="flex justify-center h-24 w-full items-center bg-green-600"> 
 
-    <span class="font-bold text-2xl">TALK TO AN EXPERT @  98459-03418</span>
+    <span class="font-bold iphone:text-base iphone:font-medium text-2xl">TALK TO AN EXPERT @  98459-03418</span>
 </div>
 <div class="flex justify-center tab:text-base  h-32 w-full items-center bg-gray-200"> 
 
@@ -245,37 +265,37 @@
    <button class="mt-8 border-2 border-white w-48  h-12 hover:bg-white font-bold text-white bg-yellow-700 duration-150 ease-in transition-all hover:border-yellow-800 hover:text-yellow-600 "> ADD YOUR PROPERTY</button>
 </div>
 
-<section class="about flex tab:h-140 items-center h-135 bg-gray-200 flex-col w-full">
+<section class="about iphone:h-141 flex tab:h-140 items-center h-135 bg-gray-200 flex-col w-full">
 <span class="w-full justify-center mt-10 items-center flex font-bold text-3xl  h-20">About the Company</span>
 
 
-<span class="w-4/5 h-24 tab:h-72 ">
+<span class="w-4/5 h-24 iphone:h-96 tab:h-72 ">
     <b>RentMyProperty</b> is an <b>award-winning</b> property management company, based in Bangalore. Our end-end property management services include tenant search & management, property upkeep, rent collection, legal agreements and more. Our tech-enabled real estate asset management services for individual apartments, villas and houses, have won awards from Zoho, grants from Facebook, and been recognized several times as among the <b>top 10 property management companies in India.</b>
 </span>
-<span class="w-4/5 h-24 mt-5 tab:h-60">
+<span class="w-4/5 h-24 iphone:h-80 mt-5 tab:h-60">
     <b>RentMyProperty</b>Management Pvt. Ltd. was incorporated in November 2014. As a leading O2O second landlord platform, we have over 200 crores of assets under management, maintain a customer presence across the country, and a track record of on-time rent distribution of 100%. 
 </span>
-<span class="w-4/5 h-24 ">
+<span class="w-4/5 h-24 iphone:h-60 ">
     Our larger mission is to make real estate affairs safe, simple and efficient. We are bootstrapped, have healthy unit economics as a business, and a strong customer focus
 </span>
-<span class="w-4/5 h-24 ">
+<span class="w-4/5 h-24 iphone:h-60 ">
   RentMyProperty's property management offering has 3 core USPs (a) Maximization of returns (b) Technology and (c) Personalization, as explained below:</span>
 
-<span class="w-3/4 mt-5 tab:h-96 h-32">
+<span class="w-3/4 mt-5 iphone:h-100 tab:h-96 h-32">
 <span class="underline font-bold">
     Maximize returns from property:
 </span>
 <span>We are able to maximize our customers' returns by firstly avoiding risk by being very selective in our tenanting process. We have a super strong marketing platform, that in addition to our direct network, advertises every managed property across premium classifieds, social media channels including video marketing on youtube, and a very strong agent network. We have built in tools to predict rental rates and market conditions which prices every property in order to maximize rents and minimize vacancies. Finally, our business model is such that you get charged a management fee on a monthly prorated basis, ONLY when tenanted.</span>
 
 </span>
-<span class="w-3/4 tab:h-72 mt-5 h-32">
+<span class="w-3/4 tab:h-72 iphone:h-96 mt-5 h-32">
 <span class="underline font-bold">
     Technology:
 </span>
 <span> Technology is at the core of our offering. Besides providing a high level of automation, accuracy & security, all our customers get access to an app, where they can login and check any details about their property in real time, giving them complete transparency. We also provide apps to our agents and vendors, so they also automate their tasks, and are able to meet our SLAs. We also have rent analysis tools that is able to price optimal market rates when signing up a new tenant and at renewals during the property management process..</span>
 
 </span>
-<span class="w-3/4 tab:h-72 mt-5 h-32">
+<span class="w-3/4 tab:h-72 iphone:h-96 mt-5 h-32">
 <span class="underline font-bold">
 Personalization::
 </span>
