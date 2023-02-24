@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css" integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              height: {
+        '128': '32rem',
+        '130':'40rem',
+        '132':'45rem',
+       '140':'125rem',
+        '100':'28rem',
+        '135':'70rem'
+      },
+      colors: {
+        'myblue': '#B4E8F6',
+      },
+      screens: {
+        '2xl': {'max': '2095px'},
+        // => @media (max-width: 1535px) { ... }
+  
+        'desk': {'max': '1279px'},
+        // => @media (max-width: 1279px) { ... }
+  
+        'lappy': {'max': '1023px'},
+        // => @media (max-width: 1023px) { ... }
+  
+        'tab': {'max': '767px'},
+        // => @media (max-width: 767px) { ... }
+  
+        'phone': {'max': '639px'},
+        // => @media (max-width: 639px) { ... }
+
+        'iphone': {'max': '400px'},
+        // => @media (max-width: 639px) { ... }
+      },
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <nav class="flex z-50 fixed w-full bg-yellow-500 h-20 justify-between items-center tab:pl-2 tab:pr-2 pl-8 pr-8">
+        <span class="flex logo font-bold text-xl w-48 tab:w-24 justify-center items-center">Logo</span>
+        <span class="w-1/2 tab:hidden font-bold h-full flex justify-evenly items-center ">
+            <a class="text-gray-500  scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/"> Owners Benifit</a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Tenants </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Refer a Friend </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">View Property </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Contact </a>
+
+        </span>
+
+    </nav>
+  <section class="flex items-center   justify-center flex-col h-128 bg-[url('/assets/mainlanding.jpg')] bg-center bg-cover ">
+<span class="font-extrabold text-3xl text-black drop-shadow-2xl underline">Your property. Our priority</span>
+<button class=" font-bold w-60 h-12 hover:border-black hover:bg-white hover:shadow-lg hover:shadow-yellow-500 duration-150 ease-in transition-all rounded-sm border-white border-2 mt-8 bg-yellow-100">ADD YOUR PROPERTY</button>
+  </section>
+<div class="items-center justify-center flex w-full h-32">
+<span class="font-bold text-yellow-800 text-3xl">Property management done right!</span>
+
+</div>
+
+<section class="tab:h-130 px-20 py-8 flex w-full h-96 bg-gray-200 flex-col items-center justify-evenly">
+<div class="flex tab:flex-col tab:h-1/3 h-1/2 w-full justify-between items-center">
+    <span class="h-1/3 items-center justify-evenly flex 1/3">
+        <span class="w-1/6 border-2 border-black flex h-full  justify-center items-center"><i class="fa-sharp text-3xl  fa-solid fa-user-tie"></i></span>
+        <span class="w-3/4 justify-center flex flex-col">
+            <h1 class="font-bold text-yellow-600 text-xl">VERIFIED TENANTS</h1>
+            <span>We place only responsible tenants who will treat your property well.</span>
+        </span>
+        </span>
+        <span class="h-1/3 items-center justify-evenly flex 1/3">
+        <span class="w-1/6 border-2 border-black flex h-full  justify-center items-center"><i class="fa-solid fa-user-gear text-3xl"></i></span>
+        <span class="w-3/4 justify-center flex flex-col">
+            <h1 class="font-bold text-yellow-600 text-xl">
+                TENANT MANAGEMENT</h1>
+            <span>We provide full support to tenants from their move-in till exit.</span>
+        </span>
+        </span>
+
+</div>
+<div class="flex tab:flex-col tab:h-1/3 h-1/2 w-full justify-between items-center">
+    <span class="h-1/3 items-center justify-evenly flex 1/3">
+        <span class="w-1/6 border-2 border-black flex h-full  justify-center items-center"><i class="fa-sharp fa-solid fa-house-user text-3xl"></i></span>
+        <span class="w-3/4 justify-center flex flex-col">
+            <h1 class="font-bold text-yellow-600 text-xl">MAINTENANCE & INTERIORS</h1>
+            <span>We keep your property safe, intact and well-maintained</span>
+        </span>
+        </span>
+        <span class="h-1/3 items-center justify-evenly flex 1/3">
+        <span class="w-1/6 border-2 border-black flex h-full  justify-center items-center"><i class="fa-solid text-3xl fa-money-bill-transfer"></i></span>
+        <span class="w-3/4 justify-center flex flex-col">
+            <h1 class="font-bold text-yellow-600 text-xl">RENT COLLECTION</h1>
+            <span>We take responsibility for payments & follow up for any dues.</span>
+        </span>
+        </span>
+</div>
+
+
+
+
+</section>
+
+
+<div class="flex w-full h-32 bg-yellow-500 justify-center items-center tab:text-base font-bold text-2xl">
+   <span class="underline">  Our mission:</span> Make real estate affairs safe, simple and efficient. 
+
+</div>
+<div class="flex w-full h-24 justify-center items-end">
+<span class="text-2xl ml-2 mr-2">why</span>  <span class="text-yellow-600 font-bold text-2xl">RentMyProperty ?</span>
+
+</div>
+
+<div class="tab:flex-col tab:h-132 flex w-full h-100 justify-evenly items-center">
+
+
+
+<div class="flex w-80 h-1/2 justify-evenly items-center  flex-col">
+    <i class="fa-solid fa-sliders text-3xl text-yellow-800"></i>
+<span class="font-medium text-2xl ">Real-time Updates </span>
+<span class="text-center">Login to our Dashboard and check any details about your property, giving you complete transparency and real time updates.</span>
+</div>
+<div class="flex w-80 h-1/2 justify-evenly items-center  flex-col">
+
+    <i class="fa-sharp text-3xl text-yellow-800 fa-solid fa-money-bill-transfer"></i>
+<span class="font-medium text-2xl ">Maximize Rental Returns</span>
+<span class="text-center">Verified Tenants. Cross platform advertising, including video marketing. Rental predictor tools to help maximize rents and minimize vacancies. Pay ONLY when tenanted.</span>
+</div>
+<div class="flex w-80 h-1/2 justify-evenly items-center  flex-col">
+
+    <i class="fa-solid fa-users text-3xl text-yellow-800"></i>
+<span class="font-medium text-2xl ">Assigned Service Managers</span>
+<span class="text-center">Get a senior single point of contact, in addition to our customer support team, so you have one person who understands your unique property requirements</span>
+</div>
+
+
+</div>
+
+
+
+
+<div class="flex tab:h-130  justify-evenly w-full bg-gray-200 flex-col h-80 items-center">
+<div class="flex tab:flex-col justify-evenly tab:items-center tab:h-3/4 items-end w-full tab:w-3/4 h-1/2" >
+<span class="flex flex-col w-1/4 h-full tab:w-full items-center tab:justify-center justify-end">
+<span class="font-bold text-3xl ">Rs. 200 Crores</span>
+<span>Assets under management</span>
+
+
+</span>
+<span class="flex flex-col w-1/4 tab:w-full h-full items-center tab:justify-center justify-end">
+<span class="font-bold text-3xl ">100% on time</span>
+<span>Rent disbursement</span>
+
+
+</span>
+<span class="flex flex-col w-1/4 tab:w-full h-full items-center tab:justify-center justify-end">
+<span class="font-bold text-3xl ">95% Occupancy</span>
+<span>After 1st tenant placement</span>
+
+
+</span>
+
+
+</div>
+<div class="flex tab:h-1/4 justify-center items-center h-1/2 ">
+
+    <button class="font-bold text-xl border-2 border-white bg-yellow-500 w-72 h-1/3 hover:bg-white hover:border-yellow-700 duration-150 ease-in transition-all hover:text-yellow-800">REQUEST MORE DETAILS</button>
+</div>
+
+
+
+</div>
+
+<div class="tab:h-130  badge flex flex-col justify-evenly h-100 w-full ">
+<span class="font-bold text-3xl w-full justify-center items-center flex ">
+    Badges of Honour</span>
+<div class="flex tab:flex-col  w-full h-3/4 justify-evenly items-center">
+<span class="w-1/4 tab:w-3/4  flex flex-col justify-evenly h-1/2 items-center">
+<span>ZOHO</span>
+<span class="font-bold text-lg text-yellow-800">TECH STAR AWARD</span>
+<span class="font-bold text-gray-700">2022</span>
+</span>
+<span class="w-1/4 tab:w-3/4  flex flex-col justify-evenly h-1/2 items-center">
+<span>ZOHO</span>
+<span class="font-bold text-lg text-yellow-800">SMALL BUSINESS GRANT</span>
+<span class="font-bold text-gray-700">2020</span>
+</span>
+<span class="w-1/4 tab:w-3/4  flex flex-col justify-evenly h-1/2 items-center">
+<span>ZOHO</span>
+<span class="font-bold text-lg text-yellow-800">TOP 10 PROPERTY MANAGEMENT</span>
+<span class="font-bold text-gray-700">2019</span>
+</span>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="flex tab:h-132 tab:flex-col bg-yellow-600 refer h-100 w-full items-center justify-evenly">
+<div class="flex tab:w-4/5 justify-evenly w-1/3 flex-col h-2/3">
+<span class="font-bold text-3xl text-white">REFER AND EARN</span>
+<span class="  text-white">Refer another property owner and earn FREE property management!</span>
+<button class="w-48 h-12 rounded-sm border-2 border-gray-500 bg-white hover:bg-yellow-800 hover:text-white font-bold text-yellow-800  hover:border-yellow-800 duration-150 ease-in transition-all">REFER NOW </button>
+
+
+</div>
+
+<div class="flex tab:w-4/5 w-1/3 h-2/3" >
+
+    <img src="/assets/refer.png" alt="">
+</div>
+
+</div>
+
+<div class="flex justify-center h-24 w-full items-center bg-green-600"> 
+
+    <span class="font-bold text-2xl">TALK TO AN EXPERT @  98459-03418</span>
+</div>
+<div class="flex justify-center tab:text-base  h-32 w-full items-center bg-gray-200"> 
+
+    <a    href="" class="font-bold text-xl tab:text-base">Learn more about the Property Management Process & Charges</a>
+</div>
+<div class="flex w-full flex-col items-center justify-center bg-[#B4E8F6]  h-128">
+<div class="flex w-4/5 h-4/5 bg-[url('/assets/act.png')] bg-cover bg-center"></div>
+   <button class="mt-8 border-2 border-white w-48  h-12 hover:bg-white font-bold text-white bg-yellow-700 duration-150 ease-in transition-all hover:border-yellow-800 hover:text-yellow-600 "> ADD YOUR PROPERTY</button>
+</div>
+
+<section class="about flex tab:h-140 items-center h-135 bg-gray-200 flex-col w-full">
+<span class="w-full justify-center mt-10 items-center flex font-bold text-3xl  h-20">About the Company</span>
+
+
+<span class="w-4/5 h-24 tab:h-72 ">
+    <b>RentMyProperty</b> is an <b>award-winning</b> property management company, based in Bangalore. Our end-end property management services include tenant search & management, property upkeep, rent collection, legal agreements and more. Our tech-enabled real estate asset management services for individual apartments, villas and houses, have won awards from Zoho, grants from Facebook, and been recognized several times as among the <b>top 10 property management companies in India.</b>
+</span>
+<span class="w-4/5 h-24 mt-5 tab:h-60">
+    <b>RentMyProperty</b>Management Pvt. Ltd. was incorporated in November 2014. As a leading O2O second landlord platform, we have over 200 crores of assets under management, maintain a customer presence across the country, and a track record of on-time rent distribution of 100%. 
+</span>
+<span class="w-4/5 h-24 ">
+    Our larger mission is to make real estate affairs safe, simple and efficient. We are bootstrapped, have healthy unit economics as a business, and a strong customer focus
+</span>
+<span class="w-4/5 h-24 ">
+  RentMyProperty's property management offering has 3 core USPs (a) Maximization of returns (b) Technology and (c) Personalization, as explained below:</span>
+
+<span class="w-3/4 mt-5 tab:h-96 h-32">
+<span class="underline font-bold">
+    Maximize returns from property:
+</span>
+<span>We are able to maximize our customers' returns by firstly avoiding risk by being very selective in our tenanting process. We have a super strong marketing platform, that in addition to our direct network, advertises every managed property across premium classifieds, social media channels including video marketing on youtube, and a very strong agent network. We have built in tools to predict rental rates and market conditions which prices every property in order to maximize rents and minimize vacancies. Finally, our business model is such that you get charged a management fee on a monthly prorated basis, ONLY when tenanted.</span>
+
+</span>
+<span class="w-3/4 tab:h-72 mt-5 h-32">
+<span class="underline font-bold">
+    Technology:
+</span>
+<span> Technology is at the core of our offering. Besides providing a high level of automation, accuracy & security, all our customers get access to an app, where they can login and check any details about their property in real time, giving them complete transparency. We also provide apps to our agents and vendors, so they also automate their tasks, and are able to meet our SLAs. We also have rent analysis tools that is able to price optimal market rates when signing up a new tenant and at renewals during the property management process..</span>
+
+</span>
+<span class="w-3/4 tab:h-72 mt-5 h-32">
+<span class="underline font-bold">
+Personalization::
+</span>
+<span>  We provide our landlord customers with a single point of contact, who is their Service Manager, during their relationship with us. The service managers are all senior level employees, empowered to make required decisions and are accountable for the business. Even though we have a centralized customer support team, we treat each customer with this level of personalization, as we know how frustrating it can be to not have one person who understands your unique property management requirements.</span>
+
+</span>
+
+<span class="w-4/5 flex">
+    As an act of giving back and staying true to our mission, PropertyAngel also runs an online academy, called Prop.Academy which is designed to educate the real estate consumer, so they can safe guard their assets and/or their property-related transactions.
+</span>
+<span class="w-4/5 flex mt-5">
+    ​Finally, in order to help our customers in their investment decision making, we also curate investment opportunities, for which we offer complementary property management for 12 months. 
+</span>
+
+
+</section>
+
+<span class="w-full flex border-b-4 border-b-yellow-700 bg-gray-200 justify-center items-center h-20">
+    <button class="w-52  bg-yellow-500 hover:bg-white hover:border-2 hover:border-yellow-600 hover:text-yellow-600 font-bold ease-in transition-all duration-150  h-2/3"> TALK TO AN EXPERT</button>
+</span>
+
+
+<section class="flex w-full justify-center tab:h-140 items-center  h-135">
+<div class="flex w-5/6  flex-col h-full ">
+<span class="w-full flex justify-between  h-24 items-center">
+<span class="text-yellow-600 tab:text-base tab:font-medium font-bold text-lg"> (c) 2023 PropertyAngel. All rights reserved. </span>
+<span class="font-bold text-lg tab:text-base tab:font-medium text-yellow-600"> Privacy Policy   ​
+</span>
+</span>
+<span class="w-full h-24 tab:h-32 items-center justify-center text-center">
+    RentMyProperty is a leading property management company, headquartered in Bangalore. It is the most trusted property management company, that provides personalized tech-enabled services.
+</span>
+
+<div class="flex tab:flex-col justify-between h-3/4 tab:h-4/5 items-center w-full">
+<div class="flex w-1/2 tab:w-full flex-col justify-evenly tab:h-3/4 h-full">
+<h1>
+    CALL US: +91 98459 03418 (also on whatsapp)</h1>
+    <h1>BANGALORE HEADQUARTERS:</h1>
+    <h1>RentMyProperty Management Pvt Ltd</h1>
+    <h1>#401 6th cross 27th</h1>
+    <h1>main road Ms layout HSR 1st sector</h1>
+    <h1>next to all Daz Hotel </h1>
+    <h1>Bangalore 560102</h1>
+    <h1>India</h1>
+    <h1>www.therentmyproperties.com</h1>
+    <h1>Open Hours:</h1>
+    <h1>Monday-Saturday: 9:30am IST - 7:30pm IST</h1>
+    <h1>Sundays: 10:30am IST - 6:30pm IST
+    </h1>
+<div class="flex h-1/3 w-3/4">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.0604190257786!2d77.63097571920086!3d12.909861526097147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae153e862cb6d3%3A0x87b0a986546b154c!2sJagadish%20Hotels-HSR%20Layout!5e0!3m2!1sen!2sin!4v1677222399531!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+</div>
+<div class="flex w-1/2 h-full tab:mt-24 tab:w-full tab:h-1/4 justify-start items-start">
+    <div class="flex items-center justify-evenly w-full h-1/2 flex-col">
+        <span class="flex w-full font-bold text-xl">
+            UseFul Links
+        </span>
+        
+        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">The property Management Blog </a>
+        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">How the Property Management Process works </a>
+        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">How much do property managers charge every month?  </a>
+        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">​7 things to consider while selecting the Best Property </a>
+        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">​Management Company </a>
+        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">What does a Property Manager do? </a>
+        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">Recommended format for Property Management </a>
+        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">Agreements </a>
+        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">PropertyAngel Referral Benefits </a>
+        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">How do I choose a good Property Manager?  </a>
+        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">NRI property management services  </a>
+        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">Rent a property managed by a property management firm.  </a>
+        
+        
+        
+        </div>
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+</body>
+</html>
