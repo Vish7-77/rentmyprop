@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css" integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              height: {
+        '128': '32rem',
+        '130':'40rem',
+        '132':'45rem',
+       '140':'125rem',
+       '141':'145rem',
+        '100':'28rem',
+        '135':'70rem',
+        '136':'75rem',
+        '9090':'97%'
+      },
+      colors: {
+        'myblue': '#B4E8F6',
+      },
+      screens: {
+        '2xl': {'max': '2095px'},
+        // => @media (max-width: 1535px) { ... }
+  
+        'desk': {'max': '1279px'},
+        // => @media (max-width: 1279px) { ... }
+  
+        'lappy': {'max': '1023px'},
+        // => @media (max-width: 1023px) { ... }
+  
+        'tab': {'max': '767px'},
+        // => @media (max-width: 767px) { ... }
+  
+        'phone': {'max': '639px'},
+        // => @media (max-width: 639px) { ... }
+
+        'iphone': {'max': '400px'},
+        // => @media (max-width: 639px) { ... }
+      },
+            }
+          }
+        }
+      </script>
+      <script src="script.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="flex z-50 fixed w-full bg-[#829F82] h-20 justify-between items-center tab:pl-2 tab:pr-2 pl-8 pr-8">
+        <span class="flex logo font-bold text-xl w-48 tab:w-24 justify-center items-center">Logo</span>
+        <span class="w-1/2 tab:hidden font-bold h-full flex justify-evenly items-center ">
+            <a class="text-gray-500  scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/owners.html"> Owners Benifit</a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/tenants.html">Tenants </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/refer.html">Refer a Friend </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/allproperty.html">View Property </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/contact.html">Contact </a>
+
+        </span>
+    <span class="tab:flex 2xl:hidden">
+
+        <button class="mr-5"  onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+       
+
+    </span>
+
+    </nav>
+    <div class="teb:flex 2xl:hidden flex absolute flex-col bg-white w-full h-1/3 justify-evenly top-20 z-50"  id="opnmen">
+        <a class="text-gray-500  scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
+        <a  class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/owners.html"> Owners Benifit</a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/tenants.html">Tenants </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/refer.html">Refer a Friend </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/allproperty.html">View Property </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/contact.html">Contact </a>
+    
+    
+    </div>
+<div class="flex pt-44 w-full   h-24 justify-evenly items-center">
+
+    <span class="font-bold text-4xl">Owner Benefits</span>
+    <span class="w-1/2 flex bg-green-600 h-2 mt-1"></span>
+</div>
+
+<!-- first row -->
+
+<div class="flex tab:h-136  tab:border-none  border-b-4 border-b-[#829F82] flex-col justify-evenly mt-20 items-center w-full h-130">
+
+<div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5">
+<span class="w-1/2 h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2">
+    <img class="rounded-md w-4/5 h-full tab:h-1/2" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80" alt="">
+</span>
+
+<span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+    <span class="font-bold text-xl text-[#829F82]">1)	Property Maintenance Done By Us</span>
+    <span>Property management is the operation, control, maintenance, and oversight of real estate and physical property. This can include residential, commercial, and land real estate. Management indicates the need for real estate to be cared for and monitored, with accountability for and attention to its useful life and condition. This is much akin to the role of management in any business.</span>
+</span>
+
+
+</div>
+<div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5 flex-row-reverse items-center h-52 flex w-4/5">
+<span class="w-1/2  flex justify-end items-end h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2 ">
+    <img class="rounded-md tab:h-1/2 w-2/3 h-full" src="https://images.unsplash.com/photo-1563453392212-326f5e854473?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+</span>
+
+<span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+    <span class="font-bold  text-xl text-[#829F82]">2) Every Week 2 Time Deep Clean Done By Us  </span>
+    <span>Cleaning is the process of removing unwanted substances, such as dirt, infectious agents, and other impurities, from an object or environment. Cleaning is often performed for aesthetic, hygienic, functional, environmental, or safety purposes. Cleaning occurs in many different contexts, and uses many different methods. Several occupations are devoted to cleaning.</span>
+</span>
+
+
+</div>
+
+
+</div>
+<!-- Second row -->
+<div class="flex tab:h-136 tab:border-none  border-b-4 border-b-[#829F82] flex-col justify-evenly mt-20 items-center w-full h-130">
+
+<div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5">
+<span class="w-1/2 h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2">
+    <img class="rounded-md w-4/5 h-full tab:h-1/2" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+</span>
+
+<span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+    <span class="font-bold text-xl text-[#829F82]">3)	Every 2 Month Dust Clean By Us </span>
+    <span>Dust collectors are used in many processes to either recover valuable granular solid or powder from process streams, or to remove granular solid pollutants from exhaust gases prior to venting to the atmosphere. Dust collection is an online process for collecting any process-generated dust from the source point on a continuous basis.</span>
+</span>
+
+
+</div>
+<div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5 flex-row-reverse items-center h-52 flex w-4/5">
+<span class="w-1/2  flex justify-end items-end h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2 ">
+    <img class="rounded-md tab:h-1/2 w-2/3 h-full" src="https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+</span>
+
+<span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+    <span class="font-bold  text-xl text-[#829F82]">4)	Common Area Clean Every Week 2 Time Deep Clean Done By Us   </span>
+    <span> The management and routine support activities of running an organized physical institution occupied or used by people, like a house, ship, hospital or factory, such as tidying, cleaning, cooking, routine maintenance, shopping, and bill payment. These tasks may be performed by members of the household, or by persons hired for the purpose.</span>
+</span>
+
+
+</div>
+
+
+</div>
+
+<!-- third row -->
+<div class="flex tab:h-136 tab:border-none  border-b-4 border-b-[#829F82] flex-col justify-evenly mt-20 items-center w-full h-130">
+
+<div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5">
+<span class="w-1/2 h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2">
+    <img class="rounded-md w-4/5 h-full tab:h-1/2" src="https://images.unsplash.com/photo-1642505172378-a6f5e5b15580?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+</span>
+
+<span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+    <span class="font-bold text-xl text-[#829F82]">5)	Every 1 Month Property Tenant Inspection Done By Us  </span>
+    <span>Real estate appraisal, property valuation or land valuation is the process of developing an opinion of value for real property (usually market value). Real estate transactions often require appraisals because they occur infrequently and every property is unique (especially their condition, a key factor in valuation), unlike corporate stocks, which are traded daily and are identical (thus a centralized Walrasian auction like a stock exchange is unrealistic).</span>
+
+
+</div>
+<div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5 flex-row-reverse items-center h-52 flex w-4/5">
+<span class="w-1/2  flex justify-end items-end h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2 ">
+    <img class="rounded-md tab:h-1/2 w-2/3 h-full" src="/assets/sumpcleaning.jpg" alt="">
+</span>
+
+<span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+    <span class="font-bold  text-xl text-[#829F82]">6)	Sump Tank and Top Tank Cleaning by Us Every 6 Months   </span>
+    <span> The management and routine support activities of running an organized physical institution occupied or used by people, like a house, ship, hospital or factory, such as tidying, cleaning, cooking, routine maintenance, shopping, and bill payment. These tasks may be performed by members of the household, or by persons hired for the purpose.</span>
+</span>
+
+
+</div>
+
+
+</div>
+
+<!-- fourth row -->
+<div class="flex tab:h-136 tab:border-none border-b-4 border-b-[#829F82] flex-col justify-evenly mt-20 items-center w-full h-130">
+
+    <div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5">
+        <span class="w-1/2 h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2">
+        <img class="rounded-md w-4/5 h-full tab:h-1/2" src="https://images.unsplash.com/photo-1562564055-71e051d33c19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+    </span>
+    
+    <span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+        <span class="font-bold text-xl text-[#829F82]">7)	Tenant Background Verification/police verification Done By Us </span>
+        <span>Tenant background verification is a process used by landlords and property managers to verify the personal and financial information of a potential tenant. This may include employment history, credit score, rental history, criminal record, and other relevant information. The purpose of the verification is to ensure that the tenant is financially stable, trustworthy, and can be relied upon to pay rent on time and maintain the property.</span>
+    
+    
+    </div>
+    <div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5 flex-row-reverse items-center h-52 flex w-4/5">
+    <span class="w-1/2  flex justify-end items-end h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2 ">
+        <img class="rounded-md tab:h-1/2 w-2/3 h-full" src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+    </span>
+    
+    <span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+        <span class="font-bold  text-xl text-[#829F82]">8)	We Prefer Tenant Working Professional Family and Bachelor Female Bachelor   </span>
+        <span> It is common for landlords to prefer tenants who are working professionals as they are likely to have a steady income and may be more responsible with their rent payments. Some landlords may also prefer families as they are perceived to be more stable and may stay in the property for a longer duration. However, it is important to comply with fair housing laws and not discriminate against tenants based on their race, gender, religion, national origin, or other protected characteristics.</span>
+    </span>
+    
+    
+    </div>
+    
+    
+    </div>
+
+
+    <!-- fifth row -->
+
+<div class="flex tab:h-136  tab:border-none border-b-4 border-b-[#829F82] flex-col justify-evenly mt-20 items-center w-full h-130">
+
+    <div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5">
+        <span class="w-1/2 h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2">
+        <img class="rounded-md w-4/5 h-full tab:h-1/2" src="https://images.unsplash.com/photo-1559824547-00b41576a76e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+    </span>
+    
+    <span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+
+        <span class="font-bold text-xl text-[#829F82]">9)Property Safety CC Camera Will Be Provided By Us Can View in Mobile Phone In Case Of Any Theft Or Allegiance </span>
+        <span>If you as the landlord or property manager plan to provide CCTV cameras, it is important to comply with all applicable laws and regulations related to video surveillance, including data privacy and consent laws. It is also important to ensure that the cameras are installed and operated in a way that respects the privacy of the tenants and does not infringe on their rights.</span>
+    </span>
+
+    </div>
+    <div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5 flex-row-reverse items-center h-52 flex w-4/5">
+    <span class="w-1/2  flex justify-end items-end h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2 ">
+        <img class="rounded-md tab:h-1/2 w-2/3 h-full" src="https://images.unsplash.com/photo-1614627264058-f3e35e86d424?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="">
+    </span>
+    
+    <span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+        <span class="font-bold  text-xl text-[#829F82]">         10)	If Staircase Available 24/7 Security Guard Will Be Provided If The Room Available 
+        </span>
+ <span>It is important for landlords and property managers to conduct a risk assessment of their properties and identify potential security vulnerabilities. Based on this assessment, appropriate security measures can be put in place to protect the tenants and the property.
+     If a room is available for rent, it is important to inform the potential tenant of any security measures that are in place, including whether or not a security guard is provided. This information can help the tenant make an informed decision about whether or not to rent the property.</span>
+    </span>
+    
+    
+    </div>
+    
+    
+    </div>
+
+
+
+    <!-- sixth row -->
+    <div class="flex tab:h-136 tab:border-none border-b-4 border-b-[#829F82] flex-col justify-evenly mt-20 items-center w-full h-130">
+
+        <div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5">
+            <span class="w-1/2 h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2">
+            <img class="rounded-md w-4/5 h-full tab:h-1/2" src="https://images.unsplash.com/photo-1518135714426-c18f5ffb6f4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=896&q=80" alt="">
+        </span>
+        
+        <span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+    
+            <span class="font-bold text-xl text-[#829F82]">11)Agreement Done By Us  </span>
+            <span>A rental agreement is a legal document that outlines the terms and conditions of a rental agreement between a landlord and tenant. It typically includes information such as the rent amount, payment due dates, security deposit amount, duration of the lease, and other relevant terms and conditions.</span>
+        </span>
+    
+        </div>
+        <div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5 flex-row-reverse items-center h-52 flex w-4/5">
+        <span class="w-1/2  flex justify-end items-end h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2 ">
+            <img class="rounded-md tab:h-1/2 w-2/3 h-full" src="https://images.unsplash.com/photo-1534951009808-766178b47a4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        </span>
+        
+        <span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+            <span class="font-bold  text-xl text-[#829F82]">      12)	On Time Rent Within 5th Of Every Month 
+            </span>
+     <span>It is important for landlords and property managers to conduct a risk assessment of their properties and identify potential security vulnerabilities. Based on this assessment, appropriate security measures can be put in place to protect the tenants and the property.
+         If a room is available for rent, it is important to inform the potential tenant of any security measures that are in place, including whether or not a security guard is provided. This information can help the tenant make an informed decision about whether or not to rent the property.</span>
+        </span>
+        
+        
+        </div>
+        
+        
+        </div>   
+
+        <!-- seventh row  -->
+
+<div class="flex tab:h-136 tab:border-none border-b-4 border-b-[#829F82] flex-col justify-evenly mt-20 items-center w-full h-130">
+
+            <div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5">
+                <span class="w-1/2 h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2">
+                <img class="rounded-md w-4/5 h-full tab:h-1/2" src="https://images.unsplash.com/photo-1608111283577-43d930222227?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+            </span>
+            
+            <span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+        
+                <span class="font-bold text-xl text-[#829F82]">13)	Even customer payment delayed rent will be paid to owner on time.  </span>
+                <span>However, regardless of whether the tenant pays rent on time or not, it is still your responsibility as the landlord or property manager to ensure that rent payments are made to the property owner on time. This means that you should have a system in place to ensure that rent payments are collected from tenants and disbursed to the property owner in a timely manner, regardless of any delays or difficulties with individual tenants.</span>
+            </span>
+        
+            </div>
+            <div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5 flex-row-reverse items-center h-52 flex w-4/5">
+            <span class="w-1/2  flex justify-end items-end h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2 ">
+                <img class="rounded-md tab:h-1/2 w-2/3 h-full" src="https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9uZXklMjBjb2xsZWN0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+            </span>
+            
+            <span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+                <span class="font-bold  text-xl text-[#829F82]">     14)	Collection responsibility
+                </span>
+         <span>As a landlord or property manager, it is your responsibility to collect rent from the tenants according to the terms outlined in the rental agreement. This includes ensuring that rent payments are made on time and in full, and following up with tenants if rent is not paid on time.
+             If a tenant fails to pay rent on time, it is important to communicate with them promptly and clearly about the situation. This can involve sending reminders or notices, discussing payment options or plans, or even taking legal action in extreme cases.
+             It is important to document all communications and actions related to r</span>
+            </span>
+            
+            
+            </div>
+            
+            
+            </div>  
+
+
+            <!-- eight row -->
+            <div class="flex tab:h-136 tab:border-none border-b-4 border-b-[#829F82] flex-col justify-evenly mt-20 items-center w-full h-130">
+
+                <div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5">
+                    <span class="w-1/2 h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2">
+                    <img class="rounded-md w-4/5 h-full tab:h-1/2" src="https://images.unsplash.com/photo-1521819342394-5f3dd1b43ba1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aG9tZSUyMGZhbWlseXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                </span>
+                
+                <span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+            
+                    <span class="font-bold text-xl text-[#829F82]">15)	Tenant Visits Done Us  </span>
+                    <span>Tenant visits can also provide an opportunity to address any maintenance or repair issues, and to discuss any concerns or issues that the tenant may have. This can help maintain a positive relationship between the landlord or property manager and the tenant, and can help prevent small issues from becoming bigger problems down the line.</span>
+                </span>
+            
+                </div>
+                <div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5 flex-row-reverse items-center h-52 flex w-4/5">
+                <span class="w-1/2  flex justify-end items-end h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2 ">
+                    <img class="rounded-md tab:h-1/2 w-2/3 h-full" src="https://images.unsplash.com/photo-1677161190157-9f4f3432c3b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+                </span>
+                
+                <span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+                    <span class="font-bold  text-xl text-[#829F82]">     16)	Refilling   
+                    </span>
+             <span>Overall, tenant visits are an important part of maintaining a successful rental business, and can help ensure that the property is being maintained properly and that the tenant is abiding by the terms of the rental agreement. Clear communication, respect for privacy, and adherence to applicable laws and regulations are all key factors in conducting successful and productive tenant visits.</span>
+                </span>
+                
+                
+                </div>
+                
+                
+                </div>  
+
+
+
+<!-- ninth row -->
+
+            <div class="flex tab:h-136 tab:border-none border-b-4 border-b-[#829F82] flex-col justify-evenly mt-20 items-center w-full h-130">
+
+                <div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5">
+                    <span class="w-1/2 h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2">
+                    <img class="rounded-md w-4/5 h-full tab:h-1/2" src="https://images.unsplash.com/photo-1552965677-8ddf4bdc939f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmFnJTIwcGFja3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                </span>
+                
+                <span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+            
+                    <span class="font-bold text-xl text-[#829F82]">17)	Move out inspection/RNM issue will be taken care by us </span>
+                    <span>During a move-out inspection, the property should be inspected thoroughly for any damages, wear and tear, or other issues. Any repairs or cleaning that need to be done should be identified and documented, and any necessary deductions from the security deposit should be clearly explained to the tenant.
+                    </span>
+                </span>
+            
+                </div>
+                <div class="justify-evenly tab:h-1/2  tab:items-center tab:justify-center tab:flex-col tab:w-4/5 items-center h-52 flex w-4/5 flex-row-reverse items-center h-52 flex w-4/5">
+                <span class="w-1/2  flex justify-end items-end h-full tab:w-full tab:flex tab:justify-center  tab:items-center tab:h-1/2 ">
+                    <img class="rounded-md tab:h-1/2 w-2/3 h-full" src="https://images.unsplash.com/photo-1633265486064-086b219458ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJpdmFjeSUyMHBvbGljeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                </span>
+                
+                <span class="flex justify-center tab:h-1/2 tab:w-full flex-col h-full w-1/2">
+                    <span class="font-bold  text-xl text-[#829F82]">   18)dispute in property will be handling by our safety and security team.  
+                    </span>
+             <span>If you choose to handle property disputes through a safety and security team, it is important to ensure that they have the necessary expertise and training to handle these types of situations effectively. This may include training in conflict resolution, negotiation, and legal and regulatory compliance.</span>
+                </span>
+                
+                
+                </div>
+                
+                
+                </div>  
+
+
+
+
+
+
+<!-- footer -->
+<section class="flex w-full justify-center tab:h-140 items-center  h-135">
+    <div class="flex w-5/6  flex-col h-full ">
+    <span class="w-full flex justify-between  h-24 items-center">
+    <span class="text-[#829F82] tab:text-base tab:font-medium font-bold text-lg"> (c) 2023 PropertyAngel. All rights reserved. </span>
+    <span class="font-bold text-lg tab:text-base tab:font-medium text-[#829F82]"> Privacy Policy   ​
+    </span>
+    </span>
+    <span class="w-full h-24 tab:h-32 items-center justify-center text-center">
+        RentMyProperty is a leading property management company, headquartered in Bangalore. It is the most trusted property management company, that provides personalized tech-enabled services.
+    </span>
+    
+    <div class="flex tab:flex-col justify-between h-3/4 tab:h-4/5 items-center w-full">
+    <div class="flex w-1/2 tab:w-full flex-col justify-evenly tab:h-3/4 h-full">
+    <h1>
+    
+        CALL US: 7349537953 (also on whatsapp)</h1>
+        <h1>BANGALORE HEADQUARTERS:</h1>
+        <h1>RentMyProperty Management Pvt Ltd</h1>
+        <h1> Al-DAAZ, 27th Main Road,</h1>
+        <h1> Phase 3, 1st Sector,</h1>
+        <h1> HSR Layout,  </h1>
+        <h1>  Bengaluru, Karnataka</h1>
+        <h1>India</h1>
+        <h1>www.therentmyproperties.com</h1>
+        <h1>Open Hours:</h1>
+        <h1>Monday-Saturday: 9:30am IST - 7:30pm IST</h1>
+        <h1>Sundays: 10:30am IST - 6:30pm IST
+        </h1>
+    <div class="flex h-1/3 w-3/4">
+        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.796657420495!2d77.64925541482148!3d12.920786990889203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1481bccee603%3A0x99bef35ef002ba8e!2sAl-DAAZ!5e0!3m2!1sen!2sin!4v1677410828434!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    </div>
+    <div class="flex w-1/2 h-full tab:mt-24 tab:w-full tab:h-1/4 justify-start items-start">
+        <div class="flex items-center tab:h-full justify-evenly w-full h-1/2 flex-col">
+            <span class="flex w-full font-bold text-xl">
+                UseFul Links
+            </span>
+            
+            <a href="/propertymanagement.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">1.THE PROPERTY MANAGEMENT BLOG </a>
+            <a href="/howitworks.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">2.HOW THE PROPERTY MANAGEMENT PROCESS WORKS </a>
+            <a href="/howmuchprop.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">3.HOW MUCH DO PROPERTY MANAGERS CHARGE EVERY MONTH?  </a>
+            <a href="/seventhings.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">​4.7 THINGS TO CONSIDER WHILE SELECTING THE BEST PROPERTY ​MANAGEMENT COMPANY</a>
+            <a href="/propmando.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">5.WHAT DOES A PROPERTY MANAGER DO? </a>
+            <a href="/agreement.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">6.RECOMMENDED FORMAT FOR PROPERTY MANAGEMENT AGREEMENTS </a>
+            
+            <a href="/refer.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">7.PROPERTYANGEL REFERRAL BENEFITS </a>
+            <a href="/choosepropagent.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">8.HOW DO I CHOOSE A GOOD PROPERTY MANAGER?  </a>
+            <a href="/nriagent.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">9.NRI PROPERTY MANAGEMENT SERVICES  </a>
+            <a href="/tenants.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">10.RENT A PROPERTY MANAGED BY A PROPERTY MANAGEMENT FIRM.  </a>
+            
+            
+            
+            </div>
+    </div>
+    
+    
+    
+    </div>
+    
+    
+    </div>
+    
+    
+    </section>
+
+</body>
+</html>
+
+
+
+<!--
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+    <div class="border-b-4 border-b-[#829F82]flex flex-col justify-evenly mt-20 items-center w-full h-130">
+    
+    <div class="justify-evenly items-center h-52 flex w-4/5">
+    <span class="w-1/2 h-full ">
+        <img class="rounded-md w-2/3 h-full" src="https://images.unsplash.com/photo-1552965677-8ddf4bdc939f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmFnJTIwcGFja3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+    </span>
+    
+    <span class="flex justify-center flex-col h-full w-1/2">
+        <span class="font-bold text-xl text-[#829F82]">17)	Move out inspection/RNM issue will be taken care by us </span>
+        <span>During a move-out inspection, the property should be inspected thoroughly for any damages, wear and tear, or other issues. Any repairs or cleaning that need to be done should be identified and documented, and any necessary deductions from the security deposit should be clearly explained to the tenant.
+        </span>
+    </span>
+    
+    
+    </div>
+    <div class="justify-evenly flex-row-reverse items-center h-52 flex w-4/5">
+    <span class="w-1/2  flex justify-end items-end h-full ">
+      
+        <img class="rounded-md w-2/3 h-full" src="https://images.unsplash.com/photo-1633265486064-086b219458ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJpdmFjeSUyMHBvbGljeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+    </span>
+    
+    <span class="flex justify-center flex-col h-full w-1/2">
+        <span class="font-bold text-xl text-[#829F82]">
+            18)dispute in property will be handling by our safety and security team.  
+               </span>
+        <span>If you choose to handle property disputes through a safety and security team, it is important to ensure that they have the necessary expertise and training to handle these types of situations effectively. This may include training in conflict resolution, negotiation, and legal and regulatory compliance.</span>
+    </span>
+    
+    
+    </div>
+    
+    
+    </div> -->

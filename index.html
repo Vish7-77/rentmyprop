@@ -26,6 +26,7 @@
         '135':'70rem'
       },
       colors: {
+      
         'myblue': '#B4E8F6',
       },
       screens: {
@@ -54,15 +55,17 @@
       <script src="script.js"></script>
 </head>
 <body>
-    <nav class="flex z-50 fixed w-full bg-yellow-500 h-20 justify-between items-center tab:pl-2 tab:pr-2 pl-8 pr-8">
+
+    <!-- navbar -->
+    <nav class="flex z-50 fixed w-full bg-[#829F82] h-20 justify-between items-center tab:pl-2 tab:pr-2 pl-8 pr-8">
         <span class="flex logo font-bold text-xl w-48 tab:w-24 justify-center items-center">Logo</span>
         <span class="w-1/2 tab:hidden font-bold h-full flex justify-evenly items-center ">
             <a class="text-gray-500  scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
-            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/"> Owners Benifit</a>
-            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Tenants </a>
-            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Refer a Friend </a>
-            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">View Property </a>
-            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Contact </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/owners.html"> Owners Benifit</a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/tenants.html">Tenants </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/refer.html">Refer a Friend </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/allproperty.html">View Property </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/contact.html">Contact </a>
 
         </span>
     <span class="tab:flex 2xl:hidden">
@@ -75,22 +78,24 @@
     </span>
 
     </nav>
+
+    <!-- main -->
   <section class="flex items-center relative  justify-center flex-col h-128 bg-[url('/assets/mainlanding.jpg')] bg-center bg-cover ">
 <div class="teb:flex 2xl:hidden flex absolute flex-col bg-white w-full h-1/3 justify-evenly top-20 z-50"  id="opnmen">
     <a class="text-gray-500  scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
-    <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/"> Owners Benifit</a>
-    <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Tenants </a>
-    <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Refer a Friend </a>
+    <a  class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/owners.html"> Owners Benifit</a>
+    <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/tenants.html">Tenants </a>
+    <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/refer.html">Refer a Friend </a>
     <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">View Property </a>
-    <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Contact </a>
+    <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/contact.html">Contact </a>
 
 
 </div>
     <span class="font-extrabold text-3xl iphone:text-lg text-black drop-shadow-2xl underline">Your property. Our priority</span>
-<button class=" font-bold w-60 h-12 hover:border-black hover:bg-white hover:shadow-lg hover:shadow-yellow-500 duration-150 ease-in transition-all rounded-sm border-white border-2 mt-8 bg-yellow-100">ADD YOUR PROPERTY</button>
+<a href="https://api.whatsapp.com/send?phone=7349537953" class="text-center items-center justify-center flex font-bold w-60 h-12 hover:border-black hover:bg-white hover:shadow-lg hover:shadow-[#829F82] duration-150 ease-in transition-all rounded-sm border-white border-2 mt-8 bg-[#829F82]">ADD YOUR PROPERTY</a>
   </section>
 <div class="items-center justify-center flex w-full h-32">
-<span class="font-bold text-yellow-800 text-3xl">Property management done right!</span>
+<span class="font-bold text-[#829F82] text-3xl">Property management done right!</span>
 
 </div>
 
@@ -99,14 +104,14 @@
     <span class="h-1/3 items-center justify-evenly flex 1/3">
         <span class="w-1/6 border-2 border-black flex h-full  justify-center items-center"><i class="fa-sharp text-3xl  fa-solid fa-user-tie"></i></span>
         <span class="w-3/4 justify-center flex flex-col">
-            <h1 class="font-bold text-yellow-600  text-xl">VERIFIED TENANTS</h1>
+            <h1 class="font-bold text-[#829F82] text-xl">VERIFIED TENANTS</h1>
             <span>We place only responsible tenants who will treat your property well.</span>
         </span>
         </span>
         <span class="h-1/3 items-center justify-evenly flex 1/3">
         <span class="w-1/6 border-2 border-black flex h-full  justify-center items-center"><i class="fa-solid fa-user-gear text-3xl"></i></span>
         <span class="w-3/4 justify-center flex flex-col">
-            <h1 class="font-bold text-yellow-600 text-xl">
+            <h1 class="font-bold text-[#829F82] text-xl">
                 TENANT MANAGEMENT</h1>
             <span>We provide full support to tenants from their move-in till exit.</span>
         </span>
@@ -117,14 +122,14 @@
     <span class="h-1/3 items-center justify-evenly flex 1/3">
         <span class="w-1/6 border-2 border-black flex h-full  justify-center items-center"><i class="fa-sharp fa-solid fa-house-user text-3xl"></i></span>
         <span class="w-3/4 justify-center flex flex-col">
-            <h1 class="font-bold text-yellow-600 text-xl">MAINTENANCE & INTERIORS</h1>
+            <h1 class="font-bold text-[#829F82] text-xl">MAINTENANCE & INTERIORS</h1>
             <span>We keep your property safe, intact and well-maintained</span>
         </span>
         </span>
         <span class="h-1/3 items-center justify-evenly flex 1/3">
         <span class="w-1/6 border-2 border-black flex h-full  justify-center items-center"><i class="fa-solid text-3xl fa-money-bill-transfer"></i></span>
         <span class="w-3/4 justify-center flex flex-col">
-            <h1 class="font-bold text-yellow-600 text-xl">RENT COLLECTION</h1>
+            <h1 class="font-bold text-[#829F82] text-xl">RENT COLLECTION</h1>
             <span>We take responsibility for payments & follow up for any dues.</span>
         </span>
         </span>
@@ -136,12 +141,12 @@
 </section>
 
 
-<div class="flex w-full iphone:font-medium iphone:text-base h-32 bg-yellow-500 justify-center items-center tab:text-base font-bold text-2xl">
+<div class="flex w-full iphone:font-medium iphone:text-base h-32 bg-[#829F82] justify-center items-center tab:text-base font-bold text-2xl">
    <span class="underline">  Our mission:</span> Make real estate affairs safe, simple and efficient. 
 
 </div>
 <div class="flex w-full h-24 justify-center items-end">
-<span class="text-2xl ml-2 mr-2">why</span>  <span class="text-yellow-600 font-bold text-2xl">RentMyProperty ?</span>
+<span class="text-2xl ml-2 mr-2">why</span>  <span class="text-[#829F82] font-bold text-2xl">RentMyProperty ?</span>
 
 </div>
 
@@ -150,19 +155,19 @@
 
 
 <div class="flex w-80 h-1/2 justify-evenly items-center  flex-col">
-    <i class="fa-solid fa-sliders text-3xl text-yellow-800"></i>
+    <i class="fa-solid fa-sliders text-3xl text-[#829F82]"></i>
 <span class="font-medium text-2xl ">Real-time Updates </span>
 <span class="text-center">Login to our Dashboard and check any details about your property, giving you complete transparency and real time updates.</span>
 </div>
 <div class="flex w-80 h-1/2 justify-evenly items-center  flex-col">
 
-    <i class="fa-sharp text-3xl text-yellow-800 fa-solid fa-money-bill-transfer"></i>
+    <i class="fa-sharp text-3xl text-[#829F82] fa-solid fa-money-bill-transfer"></i>
 <span class="font-medium text-2xl ">Maximize Rental Returns</span>
 <span class="text-center">Verified Tenants. Cross platform advertising, including video marketing. Rental predictor tools to help maximize rents and minimize vacancies. Pay ONLY when tenanted.</span>
 </div>
 <div class="flex w-80 h-1/2 justify-evenly items-center  flex-col">
 
-    <i class="fa-solid fa-users text-3xl text-yellow-800"></i>
+    <i class="fa-solid fa-users text-3xl text-[#829F82]"></i>
 <span class="font-medium text-2xl ">Assigned Service Managers</span>
 <span class="text-center">Get a senior single point of contact, in addition to our customer support team, so you have one person who understands your unique property requirements</span>
 </div>
@@ -198,30 +203,31 @@
 </div>
 <div class="flex tab:h-1/4 justify-center items-center h-1/2 ">
 
-    <button class="font-bold text-xl border-2 border-white bg-yellow-500 w-72 h-1/3 hover:bg-white hover:border-yellow-700 duration-150 ease-in transition-all hover:text-yellow-800">REQUEST MORE DETAILS</button>
+    <a href="https://api.whatsapp.com/send?phone=7349537953"
+     class="font-bold flex justify-center items-center text-xl border-2 border-white bg-[#829F82] w-72 h-1/3 hover:bg-white hover:border-[#829F82] duration-150 ease-in transition-all hover:text-[#829F82]">REQUEST MORE DETAILS</a>
 </div>
 
 
 
 </div>
 
-<div class="tab:h-130  badge flex flex-col justify-evenly h-100 w-full ">
+<!-- <div class="tab:h-130  badge flex flex-col justify-evenly h-100 w-full ">
 <span class="font-bold text-3xl w-full justify-center items-center flex ">
     Badges of Honour</span>
 <div class="flex tab:flex-col  w-full h-3/4 justify-evenly items-center">
 <span class="w-1/4 tab:w-3/4  flex flex-col justify-evenly h-1/2 items-center">
 <span>ZOHO</span>
-<span class="font-bold text-lg text-yellow-800">TECH STAR AWARD</span>
+<span class="font-bold text-lg text-[#829F82]">TECH STAR AWARD</span>
 <span class="font-bold text-gray-700">2022</span>
 </span>
 <span class="w-1/4 tab:w-3/4  flex flex-col justify-evenly h-1/2 items-center">
 <span>ZOHO</span>
-<span class="font-bold text-lg text-yellow-800">SMALL BUSINESS GRANT</span>
+<span class="font-bold text-lg text-[#829F82]">SMALL BUSINESS GRANT</span>
 <span class="font-bold text-gray-700">2020</span>
 </span>
 <span class="w-1/4 tab:w-3/4  flex flex-col justify-evenly h-1/2 items-center">
 <span>ZOHO</span>
-<span class="font-bold text-lg iphone:text-base text-yellow-800">TOP 10 PROPERTY MANAGEMENT</span>
+<span class="font-bold text-lg iphone:text-base text-[#829F82]">TOP 10 PROPERTY MANAGEMENT</span>
 <span class="font-bold text-gray-700">2019</span>
 </span>
 
@@ -231,16 +237,16 @@
 </div>
 
 
-</div>
+</div> -->
 
 
 
 
-<div class="flex tab:h-132 tab:flex-col bg-yellow-600 refer h-100 w-full items-center justify-evenly">
+<div class="flex tab:h-132 tab:flex-col bg-[#829F82] refer h-100 w-full items-center justify-evenly">
 <div class="flex tab:w-4/5 justify-evenly w-1/3 flex-col h-2/3">
 <span class="font-bold text-3xl text-white">REFER AND EARN</span>
 <span class="  text-white">Refer another property owner and earn FREE property management!</span>
-<button class="w-48 h-12 rounded-sm border-2 border-gray-500 bg-white hover:bg-yellow-800 hover:text-white font-bold text-yellow-800  hover:border-yellow-800 duration-150 ease-in transition-all">REFER NOW </button>
+<a href="https://api.whatsapp.com/send?phone=7349537953" class="flex justify-center items-center w-48 h-12 rounded-sm border-2 border-gray-500 bg-white hover:bg-[#829F82] hover:text-white font-bold text-[#829F82]  hover:border-[#829F82] duration-150 ease-in transition-all">REFER NOW </a>
 
 
 </div>
@@ -262,7 +268,7 @@
 </div>
 <div class="flex w-full flex-col items-center justify-center bg-[#B4E8F6]  h-128">
 <div class="flex w-4/5 h-4/5 bg-[url('/assets/act.png')] bg-cover bg-center"></div>
-   <button class="mt-8 border-2 border-white w-48  h-12 hover:bg-white font-bold text-white bg-yellow-700 duration-150 ease-in transition-all hover:border-yellow-800 hover:text-yellow-600 "> ADD YOUR PROPERTY</button>
+   <a href="https://api.whatsapp.com/send?phone=7349537953" class="flex justify-center items-center mt-8 border-2 border-white w-48  h-12 hover:bg-white font-bold text-white bg-[#829F82] duration-150 ease-in transition-all hover:border-[#829F82] hover:text-[#829F82] "> ADD YOUR PROPERTY</a>
 </div>
 
 <section class="about iphone:h-141 flex tab:h-140 items-center h-135 bg-gray-200 flex-col w-full">
@@ -313,16 +319,16 @@ Personalization::
 
 </section>
 
-<span class="w-full flex border-b-4 border-b-yellow-700 bg-gray-200 justify-center items-center h-20">
-    <button class="w-52  bg-yellow-500 hover:bg-white hover:border-2 hover:border-yellow-600 hover:text-yellow-600 font-bold ease-in transition-all duration-150  h-2/3"> TALK TO AN EXPERT</button>
+<span class="w-full flex border-b-4 border-b-[#829F82] bg-gray-200 justify-center items-center h-20">
+    <a href="https://api.whatsapp.com/send?phone=7349537953" class="flex justify-center items-center w-52  bg-[#829F82] hover:bg-white hover:border-2 hover:border-[#829F82] hover:text-[#829F82] font-bold ease-in transition-all duration-150  h-2/3"> TALK TO AN EXPERT</a>
 </span>
 
-
+<!-- footer -->
 <section class="flex w-full justify-center tab:h-140 items-center  h-135">
 <div class="flex w-5/6  flex-col h-full ">
 <span class="w-full flex justify-between  h-24 items-center">
-<span class="text-yellow-600 tab:text-base tab:font-medium font-bold text-lg"> (c) 2023 PropertyAngel. All rights reserved. </span>
-<span class="font-bold text-lg tab:text-base tab:font-medium text-yellow-600"> Privacy Policy   ​
+<span class="text-[#829F82] tab:text-base tab:font-medium font-bold text-lg"> (c) 2023 PropertyAngel. All rights reserved. </span>
+<span class="font-bold text-lg tab:text-base tab:font-medium text-[#829F82]"> Privacy Policy   ​
 </span>
 </span>
 <span class="w-full h-24 tab:h-32 items-center justify-center text-center">
@@ -332,13 +338,14 @@ Personalization::
 <div class="flex tab:flex-col justify-between h-3/4 tab:h-4/5 items-center w-full">
 <div class="flex w-1/2 tab:w-full flex-col justify-evenly tab:h-3/4 h-full">
 <h1>
-    CALL US: +91 98459 03418 (also on whatsapp)</h1>
+
+    CALL US: 7349537953 (also on whatsapp)</h1>
     <h1>BANGALORE HEADQUARTERS:</h1>
     <h1>RentMyProperty Management Pvt Ltd</h1>
-    <h1>#401 6th cross 27th</h1>
-    <h1>main road Ms layout HSR 1st sector</h1>
-    <h1>next to all Daz Hotel </h1>
-    <h1>Bangalore 560102</h1>
+    <h1> Al-DAAZ, 27th Main Road,</h1>
+    <h1> Phase 3, 1st Sector,</h1>
+    <h1> HSR Layout,  </h1>
+    <h1>  Bengaluru, Karnataka</h1>
     <h1>India</h1>
     <h1>www.therentmyproperties.com</h1>
     <h1>Open Hours:</h1>
@@ -346,28 +353,27 @@ Personalization::
     <h1>Sundays: 10:30am IST - 6:30pm IST
     </h1>
 <div class="flex h-1/3 w-3/4">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.0604190257786!2d77.63097571920086!3d12.909861526097147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae153e862cb6d3%3A0x87b0a986546b154c!2sJagadish%20Hotels-HSR%20Layout!5e0!3m2!1sen!2sin!4v1677222399531!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.796657420495!2d77.64925541482148!3d12.920786990889203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1481bccee603%3A0x99bef35ef002ba8e!2sAl-DAAZ!5e0!3m2!1sen!2sin!4v1677410828434!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
 </div>
 <div class="flex w-1/2 h-full tab:mt-24 tab:w-full tab:h-1/4 justify-start items-start">
-    <div class="flex items-center justify-evenly w-full h-1/2 flex-col">
+    <div class="flex items-center tab:h-full justify-evenly w-full h-1/2 flex-col">
         <span class="flex w-full font-bold text-xl">
             UseFul Links
         </span>
         
-        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">The property Management Blog </a>
-        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">How the Property Management Process works </a>
-        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">How much do property managers charge every month?  </a>
-        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">​7 things to consider while selecting the Best Property </a>
-        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">​Management Company </a>
-        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">What does a Property Manager do? </a>
-        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">Recommended format for Property Management </a>
-        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">Agreements </a>
-        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">PropertyAngel Referral Benefits </a>
-        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">How do I choose a good Property Manager?  </a>
-        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">NRI property management services  </a>
-        <a href="" class="w-4/5 hover:text-gray-600 hover:bg-yellow-500 hover:scale-105 duration-150 ease-in transition-all text-yellow-600">Rent a property managed by a property management firm.  </a>
+        <a href="/propertymanagement.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">1.THE PROPERTY MANAGEMENT BLOG </a>
+        <a href="/howitworks.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">2.HOW THE PROPERTY MANAGEMENT PROCESS WORKS </a>
+        <a href="/howmuchprop.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">3.HOW MUCH DO PROPERTY MANAGERS CHARGE EVERY MONTH?  </a>
+        <a href="/seventhings.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">​4.7 THINGS TO CONSIDER WHILE SELECTING THE BEST PROPERTY ​MANAGEMENT COMPANY</a>
+        <a href="/propmando.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">5.WHAT DOES A PROPERTY MANAGER DO? </a>
+        <a href="/agreement.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">6.RECOMMENDED FORMAT FOR PROPERTY MANAGEMENT AGREEMENTS </a>
+        
+        <a href="/refer.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">7.PROPERTYANGEL REFERRAL BENEFITS </a>
+        <a href="/choosepropagent.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">8.HOW DO I CHOOSE A GOOD PROPERTY MANAGER?  </a>
+        <a href="/nriagent.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">9.NRI PROPERTY MANAGEMENT SERVICES  </a>
+        <a href="/tenants.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">10.RENT A PROPERTY MANAGED BY A PROPERTY MANAGEMENT FIRM.  </a>
         
         
         

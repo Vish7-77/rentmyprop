@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css" integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              height: {
+        '128': '32rem',
+        '130':'40rem',
+        '132':'45rem',
+       '140':'125rem',
+       '141':'145rem',
+        '100':'28rem',
+        '135':'70rem',
+        '136':'75rem',
+        '101':'100rem',
+        '300':'190rem'
+      },
+      colors: {
+        'myblue': '#B4E8F6',
+      },
+      screens: {
+        '2xl': {'max': '2095px'},
+        // => @media (max-width: 1535px) { ... }
+  
+        'desk': {'max': '1279px'},
+        // => @media (max-width: 1279px) { ... }
+  
+        'lappy': {'max': '1023px'},
+        // => @media (max-width: 1023px) { ... }
+  
+        'tab': {'max': '767px'},
+        // => @media (max-width: 767px) { ... }
+  
+        'phone': {'max': '639px'},
+        // => @media (max-width: 639px) { ... }
+
+        'iphone': {'max': '400px'},
+        // => @media (max-width: 639px) { ... }
+      },
+            }
+          }
+        }
+      </script>
+      <script src="script.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="flex z-50 fixed w-full bg-[#829F82] h-20 justify-between items-center tab:pl-2 tab:pr-2 pl-8 pr-8">
+        <span class="flex logo font-bold text-xl w-48 tab:w-24 justify-center items-center">Logo</span>
+        <span class="w-1/2 tab:hidden font-bold h-full flex justify-evenly items-center ">
+            <a class="text-gray-500  scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/owners.html"> Owners Benifit</a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/tenants.html">Tenants </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/refer.html">Refer a Friend </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/allproperty.html">View Property </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/contact.html">Contact </a>
+
+        </span>
+    <span class="tab:flex 2xl:hidden">
+
+        <button class="mr-5"  onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+       
+
+    </span>
+
+    </nav>
+<!-- MAIN -->
+
+
+<section class="w-full relative tab:flex-col tab:h-300  border-b-[#829F82] border-b-4 h-101 justify-evenly flex pt-28 flex-col ">
+    <div class="teb:flex 2xl:hidden flex absolute flex-col bg-white w-full h-1/3 justify-evenly top-20 z-50"  id="opnmen">
+        <a class="text-gray-500  scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
+        <a  class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/owners.html"> Owners Benifit</a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/tenants.html">Tenants </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/refer.html">Refer a Friend </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/allproperty.html">View Property </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/contact.html">Contact </a>
+    
+    
+    </div>
+
+<div class="flex tab:justify-evenly tab:w-full flex-col pl-10 h-1/2 w-3/4 ">
+    <span class="text-3xl font-bold text-green-800">Rental Agreement Formats</span>
+
+<span class="mt-4 w-3/4 ">
+    There are primarily 2 types of rental agreement formats - Leave & License and Lease agreement formats. Both are explained below.
+</span>
+
+<span class="mt-5 flex font-bold text-xl">Leave & License Agreement:</span>
+<span>​A leave & license agreement is becoming very popular in recent times, as it has the following advantages:</span>
+<div class="flex mt-5 h-80 justify-evenly w-3/4 items-center flex-col">
+    <span class="w-3/4">
+        
+Minimal rights to the tenant - the legal ownership and the possession of the property remains with the licensor
+    </span>
+    <span class="w-3/4">
+        
+       1. Easier to terminate and enforce compared to rent agreement
+    </span>
+    <span class="w-3/4">
+        
+       2. No option of sublet.
+    </span>
+    <span class="w-3/4">
+        
+       3. Governed by Indian Easements Act, 1882 and not Rent Control Act. 
+    </span>
+    <span class="w-3/4">
+        
+       4. Agreement ceases immediately in case of sale to a third party. 
+    </span>
+    <span class="w-3/4">
+        5.Not transferable or inheritable
+    </span>
+    <span class="w-3/4">
+        6.In case tenants stay longer than agreed upon, they are considered unlawful occupants.
+    </span>
+</div>
+<span>At PropertyAngel, we use only Leave & License Agreements. A sample is below:</span>
+
+<a href="https://api.whatsapp.com/send?phone=7349537953" class="flex justify-center items-center w-52 hover:text-[#829F82] mt-10 ml-10  h-10 bg-[#829F82] text-white hover:bg-white hover:border-2 hover:border-[#829F82]">LEAVE & LICENSE FORMAT</a>
+
+
+</div>
+<div class="flex h-1/2 flex-col items-center  w-full justify-center">
+
+<div class="flex items-center w-full h-3/4 flex-col justify-evenly">
+<span class="font-bold text-3xl">
+    Lease Agreement</span>
+<span class="w-3/4">
+   1. A lease, or Rental agreement causes transfer of interest from the owner to tenant, or lessor to lessee, and is governed by the Rent Control Act. Thus, the rent control court has to be approached in the event of a dispute.
+</span>
+<span class="w-3/4">
+    2.Amenities provided to the tenant cannot be disrupted even if the tenant does not pay rent. The Rent Control Act is considered to be strongly in favour of the tenants. It limits the power of the landlord to reclaim the property.     
+</span>
+<span class="w-3/4">
+    3.Implies that the owner has given his rights to enjoy his property to the tenant fo​r a certain period of time, and the tenant can enjoy the said property without interference.  
+</span>
+<span class="w-3/4">
+    4.Interests of the property are transferred to the tenant. The tenant can defend his rights over the property as his own because transfer of interest has taken place.  
+</span>
+<span class="w-3/4">
+    5.The agreement comes to an end based on the terms and conditions of the contract only.</span>
+<span class="w-3/4">
+    6.A lease is both transferable and inheritable since the interest lies with the tenant..</span>
+<span class="w-3/4">
+    7.A lease is unaffected by the sale of the property to the third party as the third party cannot claim rights till the agreement comes to end.</span>
+<span class="w-3/4">
+    8.Since there is transfer of interest along with property, if the tenant occupies the said property longer than mutually accepted time, it isn’t deemed to be unlawful on part of the tenant.</span>
+
+
+
+</div>
+
+
+<span class="w-full">
+    For the reasons above, we do not use the Lease Agreement format at PropertyAngel. All our agreements are Leave and License agreements for a duration of 11 months, which can be renewed for a further duration of 11 months.
+</span>
+</div>
+
+
+
+
+
+</section>
+
+
+<!-- footer -->
+<section class="flex w-full justify-center tab:h-140 items-center  h-135">
+    <div class="flex w-5/6  flex-col h-full ">
+    <span class="w-full flex justify-between  h-24 items-center">
+    <span class="text-[#829F82] tab:text-base tab:font-medium font-bold text-lg"> (c) 2023 PropertyAngel. All rights reserved. </span>
+    <span class="font-bold text-lg tab:text-base tab:font-medium text-[#829F82]"> Privacy Policy   ​
+    </span>
+    </span>
+    <span class="w-full h-24 tab:h-32 items-center justify-center text-center">
+        RentMyProperty is a leading property management company, headquartered in Bangalore. It is the most trusted property management company, that provides personalized tech-enabled services.
+    </span>
+    
+    <div class="flex tab:flex-col justify-between h-3/4 tab:h-4/5 items-center w-full">
+    <div class="flex w-1/2 tab:w-full flex-col justify-evenly tab:h-3/4 h-full">
+    <h1>
+    
+        CALL US: 7349537953 (also on whatsapp)</h1>
+        <h1>BANGALORE HEADQUARTERS:</h1>
+        <h1>RentMyProperty Management Pvt Ltd</h1>
+        <h1> Al-DAAZ, 27th Main Road,</h1>
+        <h1> Phase 3, 1st Sector,</h1>
+        <h1> HSR Layout,  </h1>
+        <h1>  Bengaluru, Karnataka</h1>
+        <h1>India</h1>
+        <h1>www.therentmyproperties.com</h1>
+        <h1>Open Hours:</h1>
+        <h1>Monday-Saturday: 9:30am IST - 7:30pm IST</h1>
+        <h1>Sundays: 10:30am IST - 6:30pm IST
+        </h1>
+    <div class="flex h-1/3 w-3/4">
+        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.796657420495!2d77.64925541482148!3d12.920786990889203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1481bccee603%3A0x99bef35ef002ba8e!2sAl-DAAZ!5e0!3m2!1sen!2sin!4v1677410828434!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    </div>
+    <div class="flex w-1/2 h-full tab:mt-24 tab:w-full tab:h-1/4 justify-start items-start">
+        <div class="flex items-center tab:h-full justify-evenly w-full h-1/2 flex-col">
+            <span class="flex w-full font-bold text-xl">
+                UseFul Links
+            </span>
+            
+            <a href="/propertymanagement.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">1.THE PROPERTY MANAGEMENT BLOG </a>
+            <a href="/howitworks.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">2.HOW THE PROPERTY MANAGEMENT PROCESS WORKS </a>
+            <a href="/howmuchprop.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">3.HOW MUCH DO PROPERTY MANAGERS CHARGE EVERY MONTH?  </a>
+            <a href="/seventhings.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">​4.7 THINGS TO CONSIDER WHILE SELECTING THE BEST PROPERTY ​MANAGEMENT COMPANY</a>
+            <a href="/propmando.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">5.WHAT DOES A PROPERTY MANAGER DO? </a>
+            <a href="/agreement.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">6.RECOMMENDED FORMAT FOR PROPERTY MANAGEMENT AGREEMENTS </a>
+            
+            <a href="/refer.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">7.PROPERTYANGEL REFERRAL BENEFITS </a>
+            <a href="/choosepropagent.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">8.HOW DO I CHOOSE A GOOD PROPERTY MANAGER?  </a>
+            <a href="/nriagent.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">9.NRI PROPERTY MANAGEMENT SERVICES  </a>
+            <a href="/tenants.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">10.RENT A PROPERTY MANAGED BY A PROPERTY MANAGEMENT FIRM.  </a>
+            
+            
+            
+            </div>
+    </div>
+    
+    
+    
+    </div>
+    
+    
+    </div>
+    
+    
+    </section>
+
+
+</body>
+</html>

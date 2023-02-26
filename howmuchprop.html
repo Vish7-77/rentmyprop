@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css" integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              height: {
+        '128': '32rem',
+        '130':'40rem',
+        '132':'45rem',
+       '140':'125rem',
+       '141':'145rem',
+        '100':'28rem',
+        '135':'70rem',
+        '136':'75rem',
+        '9090':'90%',
+        '170':'180rem'
+      },
+      colors: {
+        'myblue': '#B4E8F6',
+      },
+      screens: {
+        '2xl': {'max': '2095px'},
+        // => @media (max-width: 1535px) { ... }
+  
+        'desk': {'max': '1279px'},
+        // => @media (max-width: 1279px) { ... }
+  
+        'lappy': {'max': '1023px'},
+        // => @media (max-width: 1023px) { ... }
+  
+        'tab': {'max': '767px'},
+        // => @media (max-width: 767px) { ... }
+  
+        'phone': {'max': '639px'},
+        // => @media (max-width: 639px) { ... }
+
+        'iphone': {'max': '400px'},
+        // => @media (max-width: 639px) { ... }
+      },
+            }
+          }
+        }
+      </script>
+      <script src="script.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="flex z-50 fixed w-full bg-[#829F82] h-20 justify-between items-center tab:pl-2 tab:pr-2 pl-8 pr-8">
+        <span class="flex logo font-bold text-xl w-48 tab:w-24 justify-center items-center">Logo</span>
+        <span class="w-1/2 tab:hidden font-bold h-full flex justify-evenly items-center ">
+            <a class="text-gray-500  scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/owners.html"> Owners Benifit</a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/tenants.html">Tenants </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/refer.html">Refer a Friend </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/allproperty.html">View Property </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/contact.html">Contact </a>
+
+        </span>
+    <span class="tab:flex 2xl:hidden">
+
+        <button class="mr-5"  onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+       
+
+    </span>
+
+    </nav>
+<!-- MAIN -->
+
+
+<section class="w-full relative tab:h-170 pt-24 tab:h-140 h-141 flex justify-center ">
+    <div class="teb:flex 2xl:hidden flex absolute flex-col bg-white w-full h-1/3 justify-evenly top-20 z-50"  id="opnmen">
+        <a class="text-gray-500  scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
+        <a  class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/owners.html"> Owners Benifit</a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/tenants.html">Tenants </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/refer.html">Refer a Friend </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/allproperty.html">View Property </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/contact.html">Contact </a>
+    
+    
+    </div>
+<div class="flex tab:h-full tab:w-full w-4/5 pt-20 justify-evenly h-9090">
+<span class="font-bold">10/11/2022</span>
+<span class="h-full bg-gray-500 w-1 rounded-full"></span>
+<div class="flex flex-col h-full w-3/4">
+
+    <span class="text-3xl text-[#829F82] mb-5">How Much Do Property Managers Charge Per Month?</span>
+<span> 
+    Hiring a good property manager is more of an asset than an expense for successful real estate investors.</span>
+<span>The best property management companies help you keep your rental property occupied year after year, increase your return on investment (ROI), and free up your valuable time.</span>
+
+<span class="w-full flex justify-center mt-5 h-52">
+    <img class="w-1/2 shadow-lg h-full" src="https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2F2aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+</span>
+
+
+
+<span class="text-2xl mt-5"> 1. Percentage of Monthly Rent</span>
+<span class="mt-5 mb-5">When a vacant property is leased to a new tenant, management companies typically charge a fixed fee or a fee equal to the anticipated monthly rent. Vacant properties may require additional management work, such as weekly inspections for potential break-ins or the presence of trespassers. </span>
+
+
+<span class="text-2xl mt-5"> 2.Fixed Property Management Fee</span>
+<span class="mt-5 mb-5">Some property managers charge a flat fee rather than a percentage of the monthly rent. Usually, the fixed property management charges depend on the property type, square footage, and property management services provided.
+    The fixed property management charges will vary by market. While a flat fee structure may seem a good deal at first glance, management companies that collect a fixed fee may not be as motivated to maximize your property's rental income. </span>
+
+<span class="text-2xl mt-5"> 3. Sublet/Guaranteed Rent Model</span>
+<span class="mt-5 mb-5">
+    The Property Management Company will ideally ask you to sign a sublease agreement with them where they will acquire the power to sub-let your property to preferred tenants. Here you will lose  control over your property. You would get lower rent than the market value, as clearly the management company would need to earn a profit, even after taking a hit of the vacancy loss. 
+    It is difficult to ensure monthly payments when your property is vacant, hence the chances of default are very high, as we have seen with almost all companies offering this model, during the pandemic. </span>
+<span class="text-2xl mt-5">4. Enhanced Comfort and Enjoyment</span>
+<span class="mt-5 mb-5">Smart home technology is also making our lives more comfortable and enjoyable. With the help of smart home entertainment systems, you can enjoy your favourite music and movies in high-quality audio and video. In addition, some smart home devices can also be programmed to create a personalised atmosphere, like by adjusting the lighting and temperature to match your mood or the occasion.</span>
+
+<span class="text-2xl mt-5">5. Improved Well-being</span>
+<span class="mt-5 mb-5">Perhaps the most exciting aspect of smart home technology is its potential to improve your overall well-being. It's the best option for working parents with little infants or people with elderly parents. The smart cameras installed in the home can help you keep an eye on your children or your elderly parents and monitor their activities throughout the day. It's especially helpful for the elderly as it can perform a wide range of functions. For example, notifying them when it's time to take their medicine, turning off taps and lights in case they forget, alerting homeowners in emergency situations, etc.</span>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+</section>
+
+<!-- footer -->
+<section class="flex w-full justify-center tab:h-140 items-center  h-135">
+    <div class="flex w-5/6  flex-col h-full ">
+    <span class="w-full flex justify-between  h-24 items-center">
+    <span class="text-[#829F82] tab:text-base tab:font-medium font-bold text-lg"> (c) 2023 PropertyAngel. All rights reserved. </span>
+    <span class="font-bold text-lg tab:text-base tab:font-medium text-[#829F82]"> Privacy Policy   ​
+    </span>
+    </span>
+    <span class="w-full h-24 tab:h-32 items-center justify-center text-center">
+        RentMyProperty is a leading property management company, headquartered in Bangalore. It is the most trusted property management company, that provides personalized tech-enabled services.
+    </span>
+    
+    <div class="flex tab:flex-col justify-between h-3/4 tab:h-4/5 items-center w-full">
+    <div class="flex w-1/2 tab:w-full flex-col justify-evenly tab:h-3/4 h-full">
+    <h1>
+    
+        CALL US: 7349537953 (also on whatsapp)</h1>
+        <h1>BANGALORE HEADQUARTERS:</h1>
+        <h1>RentMyProperty Management Pvt Ltd</h1>
+        <h1> Al-DAAZ, 27th Main Road,</h1>
+        <h1> Phase 3, 1st Sector,</h1>
+        <h1> HSR Layout,  </h1>
+        <h1>  Bengaluru, Karnataka</h1>
+        <h1>India</h1>
+        <h1>www.therentmyproperties.com</h1>
+        <h1>Open Hours:</h1>
+        <h1>Monday-Saturday: 9:30am IST - 7:30pm IST</h1>
+        <h1>Sundays: 10:30am IST - 6:30pm IST
+        </h1>
+    <div class="flex h-1/3 w-3/4">
+        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.796657420495!2d77.64925541482148!3d12.920786990889203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1481bccee603%3A0x99bef35ef002ba8e!2sAl-DAAZ!5e0!3m2!1sen!2sin!4v1677410828434!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    </div>
+    <div class="flex w-1/2 h-full tab:mt-24 tab:w-full tab:h-1/4 justify-start items-start">
+        <div class="flex items-center tab:h-full justify-evenly w-full h-1/2 flex-col">
+            <span class="flex w-full font-bold text-xl">
+                UseFul Links
+            </span>
+            
+            <a href="/propertymanagement.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">1.THE PROPERTY MANAGEMENT BLOG </a>
+            <a href="/howitworks.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">2.HOW THE PROPERTY MANAGEMENT PROCESS WORKS </a>
+            <a href="/howmuchprop.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">3.HOW MUCH DO PROPERTY MANAGERS CHARGE EVERY MONTH?  </a>
+            <a href="/seventhings.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">​4.7 THINGS TO CONSIDER WHILE SELECTING THE BEST PROPERTY ​MANAGEMENT COMPANY</a>
+            <a href="/propmando.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">5.WHAT DOES A PROPERTY MANAGER DO? </a>
+            <a href="/agreement.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">6.RECOMMENDED FORMAT FOR PROPERTY MANAGEMENT AGREEMENTS </a>
+            
+            <a href="/refer.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">7.PROPERTYANGEL REFERRAL BENEFITS </a>
+            <a href="/choosepropagent.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">8.HOW DO I CHOOSE A GOOD PROPERTY MANAGER?  </a>
+            <a href="/nriagent.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">9.NRI PROPERTY MANAGEMENT SERVICES  </a>
+            <a href="/tenants.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">10.RENT A PROPERTY MANAGED BY A PROPERTY MANAGEMENT FIRM.  </a>
+            
+            
+            
+            </div>
+    </div>
+    
+    
+    
+    </div>
+    
+    
+    </div>
+    
+    
+    </section>
+
+
+</body>
+</html>

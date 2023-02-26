@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css" integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                colors: {
+        primary: {"50":"#eff6ff","100":"#dbeafe","200":"#bfdbfe","300":"#93c5fd","400":"#60a5fa","500":"#3b82f6","600":"#2563eb","700":"#1d4ed8","800":"#1e40af","900":"#1e3a8a"}
+      },fontFamily: {
+      'body': [
+    'Inter', 
+    'ui-sans-serif', 
+    'system-ui', 
+    '-apple-system', 
+    'system-ui', 
+    'Segoe UI', 
+    'Roboto', 
+    'Helvetica Neue', 
+    'Arial', 
+    'Noto Sans', 
+    'sans-serif', 
+    'Apple Color Emoji', 
+    'Segoe UI Emoji', 
+    'Segoe UI Symbol', 
+    'Noto Color Emoji'
+  ],'sans': [
+    'Inter', 
+    'ui-sans-serif', 
+    'system-ui', 
+    '-apple-system', 
+    'system-ui', 
+    'Segoe UI', 
+    'Roboto', 
+    'Helvetica Neue', 
+    'Arial', 
+    'Noto Sans', 
+    'sans-serif', 
+    'Apple Color Emoji', 
+    'Segoe UI Emoji', 
+    'Segoe UI Symbol', 
+    'Noto Color Emoji'
+  ]
+    },
+              height: {
+        '128': '32rem',
+        '130':'40rem',
+        '132':'45rem',
+       '140':'125rem',
+       '141':'145rem',
+        '100':'28rem',
+        '135':'70rem',
+        '136':'75rem'
+      },
+      colors: {
+        'myblue': '#B4E8F6',
+      },
+      screens: {
+        '2xl': {'max': '2095px'},
+        // => @media (max-width: 1535px) { ... }
+  
+        'desk': {'max': '1279px'},
+        // => @media (max-width: 1279px) { ... }
+  
+        'lappy': {'max': '1023px'},
+        // => @media (max-width: 1023px) { ... }
+  
+        'tab': {'max': '767px'},
+        // => @media (max-width: 767px) { ... }
+  
+        'phone': {'max': '639px'},
+        // => @media (max-width: 639px) { ... }
+
+        'iphone': {'max': '400px'},
+        // => @media (max-width: 639px) { ... }
+      },
+            }
+          }
+        }
+      </script>
+      <script src="script.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="flex z-50 fixed w-full bg-[#829F82] h-20 justify-between items-center tab:pl-2 tab:pr-2 pl-8 pr-8">
+        <span class="flex logo font-bold text-xl w-48 tab:w-24 justify-center items-center">Logo</span>
+        <span class="w-1/2 tab:hidden font-bold h-full flex justify-evenly items-center ">
+            <a class="text-gray-500  scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/owners.html"> Owners Benifit</a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/tenants.html">Tenants </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/refer.html">Refer a Friend </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/allproperty.html">View Property </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/contact.html">Contact </a>
+
+        </span>
+    <span class="tab:flex 2xl:hidden">
+
+        <button class="mr-5"  onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+       
+
+    </span>
+
+    </nav>
+<!-- MAIN -->
+
+<section class="bg-white relative dark:bg-gray-900 pt-24">
+    <div class="teb:flex 2xl:hidden flex absolute flex-col bg-white w-full h-1/5 justify-evenly top-20 z-50"  id="opnmen">
+        <a class="text-gray-500  scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
+        <a  class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/owners.html"> Owners Benifit</a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/tenants.html">Tenants </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/refer.html">Refer a Friend </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/allproperty.html">View Property </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/contact.html">Contact </a>
+    
+    
+    </div>
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+        <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">All properties</h2>
+            <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Explore the whole collection </p>
+        </div> 
+        <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+            <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="/assets/001.jpg" alt="Bonnie Avatar">
+                </a>
+                <div class="p-5">
+                    <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">2 BHK furnished</a>
+                    </h3>
+                    <span class="text-gray-500 dark:text-gray-400">fully furnished</span>
+                    <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">amenities like gym, pool..</p>
+                    <a href="/house1.html" type="button" class="focus:outline-none text-white bg-[#829F82] hover:bg-[#829F82] focus:ring-4 focus:ring-[#829F82] font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-[#829F82] dark:hover:bg-[#829F82] dark:focus:ring-[#829F82]">Explore</a>
+                </div>
+            </div> 
+            <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="/assets/002.jpg" alt="Jese Avatar">
+                </a>
+                <div class="p-5">
+                    <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">2 BHK furnishe</a>
+                    </h3>
+                    <span class="text-gray-500 dark:text-gray-400">semi furnished</span>
+                    <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">amenities like gym, pool..</p>
+                    <a href="/house4.html" type="button" class="focus:outline-none text-white bg-[#829F82] hover:bg-[#829F82] focus:ring-4 focus:ring-[#829F82] font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-[#829F82] dark:hover:bg-[#829F82] dark:focus:ring-[#829F82]">Explore</a>
+                </div>
+            </div> 
+            <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="/assets/003.jpg" alt="Michael Avatar">
+                </a>
+                <div class="p-5">
+                    <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">3 BHK</a>
+                    </h3>
+                    <span class="text-gray-500 dark:text-gray-400">fully furnished</span>
+                    <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">amenities like gym, pool..</p>
+                    <a href="/house2.html" type="button" class="focus:outline-none text-white bg-[#829F82] hover:bg-[#829F82] focus:ring-4 focus:ring-[#829F82] font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-[#829F82] dark:hover:bg-[#829F82] dark:focus:ring-[#829F82]">Explore</a>
+                </div>
+            </div> 
+            <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="/assets/004.jpg" alt="Sofia Avatar">
+                </a>
+                <div class="p-5">
+                    <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">2 BHK furnishe</a>
+                    </h3>
+                    <span class="text-gray-500 dark:text-gray-400">fully furnished</span>
+                    <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">amenities like gym, pool..</p>
+                    <a href="/house3.html" type="button" class="focus:outline-none text-white bg-[#829F82] hover:bg-[#829F82] focus:ring-4 focus:ring-[#829F82] font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-[#829F82] dark:hover:bg-[#829F82] dark:focus:ring-[#829F82]">Explore</a>
+                </div>
+            </div>  
+        </div>  
+    </div>
+
+</section>
+
+
+
+<!-- footer -->
+<section class="flex w-full justify-center tab:h-140 items-center  h-135">
+    <div class="flex w-5/6  flex-col h-full ">
+    <span class="w-full flex justify-between  h-24 items-center">
+    <span class="text-[#829F82] tab:text-base tab:font-medium font-bold text-lg"> (c) 2023 PropertyAngel. All rights reserved. </span>
+    <span class="font-bold text-lg tab:text-base tab:font-medium text-[#829F82]"> Privacy Policy   ​
+    </span>
+    </span>
+    <span class="w-full h-24 tab:h-32 items-center justify-center text-center">
+        RentMyProperty is a leading property management company, headquartered in Bangalore. It is the most trusted property management company, that provides personalized tech-enabled services.
+    </span>
+    
+    <div class="flex tab:flex-col justify-between h-3/4 tab:h-4/5 items-center w-full">
+    <div class="flex w-1/2 tab:w-full flex-col justify-evenly tab:h-3/4 h-full">
+    <h1>
+    
+        CALL US: 7349537953 (also on whatsapp)</h1>
+        <h1>BANGALORE HEADQUARTERS:</h1>
+        <h1>RentMyProperty Management Pvt Ltd</h1>
+        <h1> Al-DAAZ, 27th Main Road,</h1>
+        <h1> Phase 3, 1st Sector,</h1>
+        <h1> HSR Layout,  </h1>
+        <h1>  Bengaluru, Karnataka</h1>
+        <h1>India</h1>
+        <h1>www.therentmyproperties.com</h1>
+        <h1>Open Hours:</h1>
+        <h1>Monday-Saturday: 9:30am IST - 7:30pm IST</h1>
+        <h1>Sundays: 10:30am IST - 6:30pm IST
+        </h1>
+    <div class="flex h-1/3 w-3/4">
+        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.796657420495!2d77.64925541482148!3d12.920786990889203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1481bccee603%3A0x99bef35ef002ba8e!2sAl-DAAZ!5e0!3m2!1sen!2sin!4v1677410828434!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    </div>
+    <div class="flex w-1/2 h-full tab:mt-24 tab:w-full tab:h-1/4 justify-start items-start">
+        <div class="flex items-center tab:h-full justify-evenly w-full h-1/2 flex-col">
+            <span class="flex w-full font-bold text-xl">
+                UseFul Links
+            </span>
+            
+            <a href="/propertymanagement.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">1.THE PROPERTY MANAGEMENT BLOG </a>
+            <a href="/howitworks.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">2.HOW THE PROPERTY MANAGEMENT PROCESS WORKS </a>
+            <a href="/howmuchprop.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">3.HOW MUCH DO PROPERTY MANAGERS CHARGE EVERY MONTH?  </a>
+            <a href="/seventhings.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">​4.7 THINGS TO CONSIDER WHILE SELECTING THE BEST PROPERTY ​MANAGEMENT COMPANY</a>
+            <a href="/propmando.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">5.WHAT DOES A PROPERTY MANAGER DO? </a>
+            <a href="/agreement.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">6.RECOMMENDED FORMAT FOR PROPERTY MANAGEMENT AGREEMENTS </a>
+            
+            <a href="/refer.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">7.PROPERTYANGEL REFERRAL BENEFITS </a>
+            <a href="/choosepropagent.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">8.HOW DO I CHOOSE A GOOD PROPERTY MANAGER?  </a>
+            <a href="/nriagent.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">9.NRI PROPERTY MANAGEMENT SERVICES  </a>
+            <a href="/tenants.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">10.RENT A PROPERTY MANAGED BY A PROPERTY MANAGEMENT FIRM.  </a>
+            
+            
+            
+            </div>
+    </div>
+    
+    
+    
+    </div>
+    
+    
+    </div>
+    
+    
+    </section>
+
+</body>
+</html>

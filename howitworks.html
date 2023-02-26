@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css" integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              height: {
+        '128': '32rem',
+        '130':'40rem',
+        '132':'45rem',
+       '140':'125rem',
+       '142':'130rem',
+       '141':'145rem',
+        '100':'28rem',
+        '135':'70rem',
+        '136':'75rem',
+        '180':'250rem'
+      },
+      colors: {
+        'myblue': '#B4E8F6',
+      },
+      screens: {
+        '2xl': {'max': '2095px'},
+        // => @media (max-width: 1535px) { ... }
+  
+        'desk': {'max': '1279px'},
+        // => @media (max-width: 1279px) { ... }
+  
+        'lappy': {'max': '1023px'},
+        // => @media (max-width: 1023px) { ... }
+  
+        'tab': {'max': '767px'},
+        // => @media (max-width: 767px) { ... }
+  
+        'phone': {'max': '639px'},
+        // => @media (max-width: 639px) { ... }
+
+        'iphone': {'max': '400px'},
+        // => @media (max-width: 639px) { ... }
+      },
+            }
+          }
+        }
+      </script>
+      <script src="script.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="flex z-50 fixed w-full bg-[#829F82] h-20 justify-between items-center tab:pl-2 tab:pr-2 pl-8 pr-8">
+        <span class="flex logo font-bold text-xl w-48 tab:w-24 justify-center items-center">Logo</span>
+        <span class="w-1/2 tab:hidden font-bold h-full flex justify-evenly items-center ">
+            <a class="hover:text-gray-500  hover:scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/owners.html"> Owners Benifit</a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/tenants.html">Tenants </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/refer.html">Refer a Friend </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/">View Property </a>
+            <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/contact.html">Contact </a>
+
+        </span>
+    <span class="tab:flex 2xl:hidden">
+
+        <button class="mr-5"  onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+       
+
+    </span>
+
+    </nav>
+<!-- MAIN -->
+
+
+<section class="flex relative tab:h-180 flex-col items-center   w-full h-142 pt-24">
+    <div class="teb:flex 2xl:hidden flex absolute flex-col bg-white w-full h-1/3 justify-evenly top-20 z-50"  id="opnmen">
+        <a class="text-gray-500  scale-90 duration-150 ease-in transition-all text-base " href="/">Home </a>
+        <a  class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/owners.html"> Owners Benifit</a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/tenants.html">Tenants </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/refer.html">Refer a Friend </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/allproperty.html">View Property </a>
+        <a class="hover:text-gray-500 hover:scale-90 duration-150 ease-in transition-all text-base " href="/contact.html">Contact </a>
+    
+    
+    </div>
+
+<div class="flex tab:h-[7%] w-4/5 mb-10 justify-center pt-24 items-center h-1/4">
+    <img class="w-2/3 shadow-lg" src="https://images.unsplash.com/photo-1626178793926-22b28830aa30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+</div>
+
+<span class="w-3/4 mt-10 justify-center text-4xl flex">
+    How does the process work?
+</span>
+
+<div class="flex tab:h-80 mt-10 h-24 w-4/5 flex-col">
+    <span class="font-bold underline">1. On-boarding your property</span>
+    <span>We first ensure that your property meets our standard fittings & fixtures requirements, and/or you are willing to upgrade the fittings & fixtures to meet the standards. Post this, we sign a Property Management Agreement with you, listing our responsibilities. You will be assigned a specific Property ID. As part of this process, we will also do an expected rent analysis, with any inputs that you may provide as well. </span>
+</div>
+<div class="flex tab:h-80 mt-5 h-24 w-4/5 flex-col">
+    <span class="font-bold underline">2. Detailed Inventory check </span>
+    <span>Inventory management is an important part of our function and we do a detailed Inventory check of the property, noting all fittings, fixtures, damages and the general state. This inventory list is then maintained across tenants, and we ensure to give you the property back in the same state, when our agreement ends.  </span>
+</div>
+<div class="flex tab:h-80 mt-5 h-24 w-4/5 flex-col">
+    <span class="font-bold underline">3. Property Marketing & Video walk-through </span>
+    <span>If the property is vacant, we start the marketing immediately upon signup, through numerous channels primarily classifieds, local broker networks, MNC clientele, Social media, and traditional media as relevant. We also do a complementary video walk-through of the property. While the property is vacant, the marketing team will share regular updates with you.   </span>
+</div>
+<div class="flex tab:h-128 mt-5 h-44 w-4/5 flex-col">
+    <span class="font-bold underline">4. Tenant Placement </span>
+    <span>All agreements are handled by us. Once we have an interested party, our team completes the negotiation to get you the best return, as well as a background verification. Once we are satisfied, we send you an NOC with the tenant/rent/deposit details to sign and send back to us, on the basis of which our company signs a Leave & License agreement with the tenant on your behalf. They are legally your tenants managed by us (no sublet). All agreement formalities, token, deposit and rent cheques collection is handled by our team. Any work in the property requested by the tenant, and approved by you is coordinated by us. We do a formal handover to the tenant with a sign-off on the inventory forms.    </span>
+</div>
+<div class="flex tab:h-135  h-100 w-4/5 flex-col">
+    <span class="font-bold underline">5. Ongoing Management </span>
+    <span>This Includes:   </span>
+    <span>1.<span class="underline">6 month inspections</span> - We inspect all properties at least every 6 months to ensure it is well maintained. </span>
+    <span>2.<span class="underline">Pics on demand </span> -Although we send pics to the owner during our regular inspections, the owner can also request for ad-hoc pics.  </span>
+    <span>3.<span class="underline">Rent collection & follow up </span> -We collect Post dated cheques for all 11 months of the rental agreement period, and in the event there is any issues with the cheque clearing, our team will follow up until resolved.   </span>
+    <span>4.<span class="underline">Detailed Accounts Statements  </span> -Every month a detailed statement is sent to the owner, which includes all details of rent collection, payment, charges and/or any other approved deductions.     </span>
+    <span>5.<span class="underline">On time rents   </span> -We ensure you get your rent on time.      </span>
+    <span>6.<span class="underline">Repair requests/complaints by tenants   </span> - We are the point of contact for the tenant, so they don't bother you. Any repair request from them is handled/negotiated by us. No repairs are done at your cost without your approval. Costs of minor repairs are borne by tenants.    </span>
+    <span>7.<span class="underline">Repair and ad-hoc requests from owners  </span> -We are your point of contact, for any ad-hoc requests you might have.   </span>
+    <span>8.<span class="underline">Association complaints  </span> -In the event you receive any complaints from the Association about the tenants, our team will handle and resolve the same.    </span>
+    <span>9.<span class="underline">Maintenance works </span> -All minor works are paid for by tenant, except in the first 20 days after move in. For any major repairs, such as seepage issues, etc, our team can source vendors and coordinate the same for you.    </span>
+    <span>10.<span class="underline">TDS certificates/Form 16s </span> -In the event the tenant is a company, and there is a TDS deduction, our team will follow up and source the TDS certificates every quarter for your income tax filing.   </span>
+</div>
+<div class="flex tab:h-80 mt-5 h-24 w-4/5 flex-col">
+    <span class="font-bold underline">6. Tenant Renewals</span>
+    <span>Every 11 months, the Leave and License agreement with the tenant is renewed at the agreed upon escalation, and fresh post dated cheques collected for the new period. We start the renewal process 2 months before expiry.     </span>
+</div>
+<div class="flex mt-5 h-24 tab:h-80 w-4/5 flex-col">
+    <span class="font-bold underline">7. Tenant Exit check/Settlement & Replacement</span>
+    <span>When a tenant vacates, we do a thorough exit check and calculate the costs of damages. We then do a final settlement with the tenant after deducting any unpaid bills, unpaid rent, and costs of repairs. We then restart our marketing process and work on Tenant Replacement (and the process repeats)  </span>
+</div>
+
+</section>
+
+<section class="flex  border-b-[#829F82] border-b-4 bg-gray-200 w-full h-100 flex-col justify-center items-center">
+
+    <span class="w-4/5 font-extrabold text-2xl mb-5 flex justify-center items-center">
+        OUR CHARGES
+    </span>
+    <span class="w-4/5 mb-5 flex justify-center items-center">
+        Our charges are modeled on "Pay for Performance". We charge 9% of rent per month as a monthly management fee (subject to a minimum fee if rent is below a certain threshold), only when occupied.  You pay monthly, after the service is rendered.
+    </span>
+  <div class="flex flex-col w-3/4">
+    <span class="flex">​NOTE:</span>
+    <span> -->There is no sign up fee  </span>
+    <span> -->There is no monthly management fee when the property is vacant  </span>
+    <span> -->Our fees are subject to GST (Goods & Services Tax) at 18%  </span>
+  </div>
+
+
+<span class="w-full justify-center flex items-center h-24 ">
+
+    <a href="https://api.whatsapp.com/send?phone=7349537953" class="flex justify-center items-center w-44 h-10 font-bold hover:bg-white text-black hover:text-[#829F82] rounded-sm bg-[#829F82]">
+        List Your House
+    </a>
+</span>
+
+</section>
+
+<!-- footer -->
+<section class="flex w-full justify-center tab:h-140 items-center  h-135">
+    <div class="flex w-5/6  flex-col h-full ">
+    <span class="w-full flex justify-between  h-24 items-center">
+    <span class="text-[#829F82] tab:text-base tab:font-medium font-bold text-lg"> (c) 2023 PropertyAngel. All rights reserved. </span>
+    <span class="font-bold text-lg tab:text-base tab:font-medium text-[#829F82]"> Privacy Policy   ​
+    </span>
+    </span>
+    <span class="w-full h-24 tab:h-32 items-center justify-center text-center">
+        RentMyProperty is a leading property management company, headquartered in Bangalore. It is the most trusted property management company, that provides personalized tech-enabled services.
+    </span>
+    
+    <div class="flex tab:flex-col justify-between h-3/4 tab:h-4/5 items-center w-full">
+    <div class="flex w-1/2 tab:w-full flex-col justify-evenly tab:h-3/4 h-full">
+    <h1>
+    
+        CALL US: 7349537953 (also on whatsapp)</h1>
+        <h1>BANGALORE HEADQUARTERS:</h1>
+        <h1>RentMyProperty Management Pvt Ltd</h1>
+        <h1> Al-DAAZ, 27th Main Road,</h1>
+        <h1> Phase 3, 1st Sector,</h1>
+        <h1> HSR Layout,  </h1>
+        <h1>  Bengaluru, Karnataka</h1>
+        <h1>India</h1>
+        <h1>www.therentmyproperties.com</h1>
+        <h1>Open Hours:</h1>
+        <h1>Monday-Saturday: 9:30am IST - 7:30pm IST</h1>
+        <h1>Sundays: 10:30am IST - 6:30pm IST
+        </h1>
+    <div class="flex h-1/3 w-3/4">
+        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.796657420495!2d77.64925541482148!3d12.920786990889203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1481bccee603%3A0x99bef35ef002ba8e!2sAl-DAAZ!5e0!3m2!1sen!2sin!4v1677410828434!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    </div>
+    <div class="flex w-1/2 h-full tab:mt-24 tab:w-full tab:h-1/4 justify-start items-start">
+        <div class="flex items-center tab:h-full justify-evenly w-full h-1/2 flex-col">
+            <span class="flex w-full font-bold text-xl">
+                UseFul Links
+            </span>
+            
+            <a href="/propertymanagement.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">1.THE PROPERTY MANAGEMENT BLOG </a>
+            <a href="/howitworks.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">2.HOW THE PROPERTY MANAGEMENT PROCESS WORKS </a>
+            <a href="/howmuchprop.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">3.HOW MUCH DO PROPERTY MANAGERS CHARGE EVERY MONTH?  </a>
+            <a href="/seventhings.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">​4.7 THINGS TO CONSIDER WHILE SELECTING THE BEST PROPERTY ​MANAGEMENT COMPANY</a>
+            <a href="/propmando.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">5.WHAT DOES A PROPERTY MANAGER DO? </a>
+            <a href="/agreement.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">6.RECOMMENDED FORMAT FOR PROPERTY MANAGEMENT AGREEMENTS </a>
+            
+            <a href="/refer.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">7.PROPERTYANGEL REFERRAL BENEFITS </a>
+            <a href="/choosepropagent.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">8.HOW DO I CHOOSE A GOOD PROPERTY MANAGER?  </a>
+            <a href="/nriagent.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">9.NRI PROPERTY MANAGEMENT SERVICES  </a>
+            <a href="/tenants.html" class="w-4/5 hover:text-gray-600 hover:bg-[#829F82] hover:scale-105 duration-150 ease-in transition-all text-[#829F82]">10.RENT A PROPERTY MANAGED BY A PROPERTY MANAGEMENT FIRM.  </a>
+            
+            
+            
+            </div>
+    </div>
+    
+    
+    
+    </div>
+    
+    
+    </div>
+    
+    
+    </section>
+
+</body>
+</html>
