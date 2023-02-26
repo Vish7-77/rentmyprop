@@ -110,33 +110,33 @@
 Please leave us a message below. We will revert shortly. In case you are a property owner and are enquiring about property management services, please fill out the form here instead:Contact
     </span>
 
-    <form action="" class="h-4/5 border-2 mt-5 justify-evenly  w-full">
+    <form  class="contact_form  h-4/5 border-2 mt-5 justify-evenly  w-full">
 <span class="bg-gray-200  w-full flex justify-start pl-2 font-bold text-xl items-center h-10">Contact form</span>
 
 <span class="w-full items-center h-12 flex flex-col mt-2">
     <span>Full Name <span class="text-red-500">*</span></span>
-    <input type="text" class="w-1/2 border-2  border-black" required>
+    <input type="text"  class="fullname w-1/2 border-2  border-black" required>
 
 
 </span>
 
 <span class="w-full items-center h-12 flex flex-col mt-2">
     <span>Email<span class="text-red-500">*</span></span>
-    <input type="email" class="w-1/2 border-2  border-black" required>
+    <input type="email" class="email w-1/2 border-2  border-black" required>
 </span>
 
 
 <span class="w-full items-center h-12 flex flex-col mt-2">
     <span>Number <span class="text-red-500">*</span></span>
-    <input type="number" class="w-1/2 border-2  border-black" required>
+    <input type="number" class="number w-1/2 border-2  border-black" required>
 </span>
 <span class="w-full items-center h-24 flex flex-col mt-2">
     <span>Requirement <span class="text-red-500">*</span></span>
-  <textarea name="" class="border-2 border-black" id="" cols="30" rows="10"></textarea>
+  <textarea name="" class="message border-2 border-black" id="" cols="30" rows="10"></textarea>
 </span>
 <span class="w-full h-24 flex items-center justify-center">
     
-<button type="submit" class="w-32 h-12 border-2 bg-[#829F82] hover:border-[#829F82] font-bold duration-150 ease-in transition-all hover:text-[#829F82] hover:bg-white "> Submit</button>
+<button id="btnn" type="submit" class="w-32 h-12 border-2 bg-[#829F82] hover:border-[#829F82] font-bold duration-150 ease-in transition-all hover:text-[#829F82] hover:bg-white "> Submit</button>
 </span>
 
 
@@ -246,6 +246,44 @@ Please leave us a message below. We will revert shortly. In case you are a prope
     
     
     </section>
+    <script src="https://smtpjs.com/v3/smtp.js">
+
+    </script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+
+
+
+
+//func
+var btn= document.getElementById('btnn')
+btn.addEventListener('click',function(e){
+    console.log('hello')
+e.preventDefault();
+const form = document.querySelector('.contact_form')
+const name = document.querySelector('.name')
+const email = document.querySelector('.email')
+const messag = document.querySelector('.message')
+const fullname = document.querySelector('.fullname')
+const number = document.querySelector('.number')
+const main = ` ${number} ${messag.value}  ${email.value} ${fullname.value} `;
+
+Email.send({
+    SecureToken : " c17e6fb0-7e42-492a-9c0f-d19b8d51522e",
+    To : 'info@rentmyproperty.com',
+    From : 'vish9829216@gmail.com',
+    Subject :'CONTACT MESSAGE',
+    Body :main
+}).then(
+  
+  message => alert(message)
+);
+})
+
+
+
+    </script> -->
 
 </body>
 </html>
+
